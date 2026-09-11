@@ -1,21 +1,21 @@
-# Marissa’s Little Café
+# Sip & Wonder
 
-A personal café for coffee memories, gentle faith reflections, and original creature companions.
+A personal café for coffee memories, gentle faith reflections, and original Siplings.
 
 ## Features
 
 - Coffee journal with optional photos and mood.
 - Open-ended faith and gratitude prompts; no assumed denomination.
-- An expandable field guide of 306 original creatures in 102 families and three stages, discovered through coffee milestones.
-- Permanent creature progress, with favorites, rarity, family views, and collection search.
+- An expandable field guide of 306 original Siplings in 102 families and three stages, discovered through coffee milestones.
+- Permanent Sipling progress, with favorites, rarity, family views, and collection search.
 - Café colors, a little plant, and a personal note.
 - Private, account-scoped D1 records and R2 photos. No browser-only journal storage.
 
 - Six exploration habitats, persistent encounters, treats, trail tickets, and stars.
-- A server-managed matching game, companion bonding, evolution, and one-time quest rewards.
+- A server-managed matching game, Sipling bonding, evolution, and one-time quest rewards.
 - Exploration can discover every species; the larger roster is not locked behind coffee consumption.
 
-- Undiscovered names, artwork, and evolution forms stay hidden; trail encounters reveal them. Matching games only show known companions and café symbols.
+- Undiscovered names, artwork, and evolution forms stay hidden; trail encounters reveal them. Matching games only show known Siplings and café symbols.
 
 ## iPhone
 
@@ -30,6 +30,6 @@ Generate migrations with `npm run db:generate`. Build with `npm run build`, then
 
 ## Privacy and access
 
-The first hosted version is owner-private. Every API checks the platform identity and scopes records to that account. Granting Marissa access is a separate hosting access step. Reflections never earn points or unlock companions.
+The first hosted version is owner-private. Every API checks the platform identity and scopes records to that account. Granting Marissa access is a separate hosting access step. Reflections never earn points or unlock Siplings.
 
-The art features original fantasy companions, not official Pokémon characters. Her religious tradition has not yet been specified; reflections can be tailored later.
+The art features original fantasy Siplings, not official Pokémon characters. Her religious tradition has not yet been specified; reflections can be tailored later.

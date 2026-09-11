@@ -2,10 +2,10 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Marissa’s Little Café",
-  description: "A cozy place for coffee, faith, and little companions.",
+  title: "Sip & Wonder",
+  description: "A cozy world of coffee, faith, and magical Siplings.",
   manifest: "/manifest.webmanifest",
-  appleWebApp: { capable: true, title: "Little Café", statusBarStyle: "default" },
+  appleWebApp: { capable: true, title: "Sip & Wonder", statusBarStyle: "default" },
   icons: {
     icon: "/favicon.svg",
     apple: "/apple-touch-icon.png",
