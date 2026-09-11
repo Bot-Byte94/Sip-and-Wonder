@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1789149944039,
+      "tag": "0000_worried_wendell_vaughn",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1789151039164,
+      "tag": "0001_living_randall_flagg",
+      "breakpoints": true
+    }
+  ]
+}
