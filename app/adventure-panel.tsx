@@ -1,6 +1,6 @@
 'use client';
-import {useEffect,useState} from 'react';
-import {Map,Compass,Cookie,Ticket,Star,Heart,Sparkles,Gift,Check,ArrowRight,Leaf,Flame,Cloud,Moon,Waves,Lightbulb,RotateCcw,Coffee,BookHeart,HelpCircle} from 'lucide-react';
+import {useState} from 'react';
+import {Compass,Cookie,Ticket,Star,Heart,Sparkles,Gift,Check,ArrowRight,Leaf,Flame,Cloud,Moon,Waves,Lightbulb,RotateCcw,Coffee,BookHeart} from 'lucide-react';
 import {Tabs,TabsList,TabsTrigger} from '@/components/ui/tabs';
 import {Progress} from '@/components/ui/progress';
 import {creatures,creatureById,type Creature} from '@/lib/creatures';

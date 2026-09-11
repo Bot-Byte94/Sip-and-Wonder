@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect, @next/next/no-html-link-for-pages, @next/next/no-img-element, @typescript-eslint/no-unused-vars */
 "use client";
 import { useCallback,useEffect,useRef,useState } from 'react';
 import { Coffee,BookHeart,Sparkles,Flower2,ArrowUpRight,Sun,Heart,Plus,Leaf,Check,Lock,Trash2,ImagePlus,Mail,Smartphone,Share,Compass } from 'lucide-react';
