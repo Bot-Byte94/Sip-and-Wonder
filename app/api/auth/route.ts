@@ -38,8 +38,9 @@ async function hashToken(token: string): Promise<string> {
   return base64(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(token)));
 }
 
-function cookie(token: string, maxAge: number) {
-  return `${sessionCookie}=${token}; Path=/; Max-Age=${maxAge}; HttpOnly; Secure; SameSite=Lax`;
+function cookie(req: Request, token: string, maxAge: number) {
+  const secure = new URL(req.url).protocol === 'https:' ? '; Secure' : '';
+  return `${sessionCookie}=${token}; Path=/; Max-Age=${maxAge}; HttpOnly${secure}; SameSite=Lax`;
 }
 
 function sameOrigin(req: Request) {
@@ -52,7 +53,7 @@ export async function GET(req: Request) {
   if (!token) return response({ user: null });
   const db = database();
   const session = await db.prepare('SELECT u.id,u.email,u.display_name AS displayName,s.expires_at AS expiresAt FROM auth_sessions s JOIN auth_users u ON u.id=s.user_id WHERE s.token_hash=?').bind(await hashToken(token)).first<{ id: string; email: string; displayName: string; expiresAt: string }>();
-  if (!session || session.expiresAt <= new Date().toISOString()) return response({ user: null }, 200, cookie('', 0));
+  if (!session || session.expiresAt <= new Date().toISOString()) return response({ user: null }, 200, cookie(req, '', 0));
   return response({ user: { id: session.id, email: session.email, displayName: session.displayName } });
 }
 
@@ -70,12 +71,12 @@ export async function POST(req: Request) {
   if (!existing) { const salt = bytes(16); user.passwordSalt = base64(salt); user.passwordHash = await derive(data.password, salt); await db.prepare('INSERT INTO auth_users (id,email,display_name,password_hash,password_salt,created_at) VALUES (?,?,?,?,?,?)').bind(user.id, user.email, user.displayName, user.passwordHash, user.passwordSalt, new Date().toISOString()).run(); }
   const token = base64(bytes(32)).replaceAll('+', '-').replaceAll('/', '_').replaceAll('=', '');
   await db.prepare('INSERT INTO auth_sessions (token_hash,user_id,expires_at,created_at) VALUES (?,?,?,?)').bind(await hashToken(token), user.id, new Date(Date.now() + sessionDays * 86400000).toISOString(), new Date().toISOString()).run();
-  return response({ user: { id: user.id, email: user.email, displayName: user.displayName } }, 200, cookie(token, sessionDays * 86400));
+  return response({ user: { id: user.id, email: user.email, displayName: user.displayName } }, 200, cookie(req, token, sessionDays * 86400));
 }
 
 export async function DELETE(req: Request) {
   if (!sameOrigin(req)) return response({ error: 'Please use the café to sign out.' }, 403);
   const token = req.headers.get('cookie')?.match(/(?:^|; )sip_session=([^;]+)/)?.[1];
   if (token) await database().prepare('DELETE FROM auth_sessions WHERE token_hash=?').bind(await hashToken(token)).run();
-  return response({ ok: true }, 200, cookie('', 0));
+  return response({ ok: true }, 200, cookie(req, '', 0));
 }
