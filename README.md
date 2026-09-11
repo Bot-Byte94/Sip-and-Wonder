@@ -11,6 +11,10 @@ A personal café for coffee memories, gentle faith reflections, and original cre
 - Café colors, a little plant, and a personal note.
 - Private, account-scoped D1 records and R2 photos. No browser-only journal storage.
 
+## iPhone
+
+Designed for iPhone 16 Pro with bottom navigation, safe-area spacing, touch targets, keyboard-aware dialogs, and Home Screen metadata/icons. Add from Safari’s Share menu. Journal access and saving require a connection.
+
 ## Development
 
 Requires Node.js 22.13 or newer. Run `npm ci` and `npm run dev`.
