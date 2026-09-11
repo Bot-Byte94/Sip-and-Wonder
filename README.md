@@ -6,10 +6,16 @@ A personal café for coffee memories, gentle faith reflections, and original cre
 
 - Coffee journal with optional photos and mood.
 - Open-ended faith and gratitude prompts; no assumed denomination.
-- An expandable field guide of 36 original creatures in 12 families and three stages, discovered through coffee milestones.
+- An expandable field guide of 306 original creatures in 102 families and three stages, discovered through coffee milestones.
 - Permanent creature progress, with favorites, rarity, family views, and collection search.
 - Café colors, a little plant, and a personal note.
 - Private, account-scoped D1 records and R2 photos. No browser-only journal storage.
+
+- Six exploration habitats, persistent encounters, treats, trail tickets, and stars.
+- A server-managed matching game, companion bonding, evolution, and one-time quest rewards.
+- Exploration can discover every species; the larger roster is not locked behind coffee consumption.
+
+- Undiscovered names, artwork, and evolution forms stay hidden; trail encounters reveal them. Matching games only show known companions and café symbols.
 
 ## iPhone
 

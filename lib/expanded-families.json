@@ -1,0 +1,812 @@
+[
+  {
+    "names": [
+      "Acornibble",
+      "Oakwarden",
+      "Crownstag"
+    ],
+    "type": "Grove",
+    "visual": "an acorn-sized spotted deer with twig antlers and an oak-leaf cape"
+  },
+  {
+    "names": [
+      "Thimblehog",
+      "Bramblecoat",
+      "Rosethorn"
+    ],
+    "type": "Grove",
+    "visual": "a round hedgehog with rosebud spines and little gardening gloves"
+  },
+  {
+    "names": [
+      "Mushmop",
+      "Morelkin",
+      "Mycelord"
+    ],
+    "type": "Grove",
+    "visual": "a cheerful mushroom cap spirit with root feet and a mossy beard"
+  },
+  {
+    "names": [
+      "Pipossum",
+      "Petalpouch",
+      "Orchardame"
+    ],
+    "type": "Grove",
+    "visual": "a tiny opossum carrying apple blossoms in a leaf pouch"
+  },
+  {
+    "names": [
+      "Hazelhop",
+      "Walnutwig",
+      "Canopycoon"
+    ],
+    "type": "Grove",
+    "visual": "a nut-brown raccoon with an enormous striped leaf tail"
+  },
+  {
+    "names": [
+      "Fernlet",
+      "Frondancer",
+      "Jungleveil"
+    ],
+    "type": "Grove",
+    "visual": "a bright green praying mantis with fern-frond arms and elegant petal wings"
+  },
+  {
+    "names": [
+      "Dandelil",
+      "Breezebloom",
+      "Wishtuft"
+    ],
+    "type": "Grove",
+    "visual": "a dandelion seed lion cub with an airy white puff mane"
+  },
+  {
+    "names": [
+      "Cloveroo",
+      "Meadowkick",
+      "Springbound"
+    ],
+    "type": "Grove",
+    "visual": "a clover-eared kangaroo with a flower pouch and huge springy feet"
+  },
+  {
+    "names": [
+      "Birchbit",
+      "Barkbuddy",
+      "Woodwisp"
+    ],
+    "type": "Grove",
+    "visual": "a tiny birch log spirit with smiling knot eyes and branch arms"
+  },
+  {
+    "names": [
+      "Papaya",
+      "Palmling",
+      "Tropicrown"
+    ],
+    "type": "Grove",
+    "visual": "a sleepy sloth with a pineapple tuft and palm-leaf claws"
+  },
+  {
+    "names": [
+      "Drizzlisk",
+      "Reedrider",
+      "Marshmajest"
+    ],
+    "type": "Water",
+    "visual": "a little axolotl with reed-like pink gills and a water-lily tail"
+  },
+  {
+    "names": [
+      "Coralip",
+      "Reefruff",
+      "Coralora"
+    ],
+    "type": "Water",
+    "visual": "a seahorse with soft branching coral fins and pearly bubbles"
+  },
+  {
+    "names": [
+      "Tidepup",
+      "Seasplash",
+      "Wavehound"
+    ],
+    "type": "Water",
+    "visual": "a blue otter pup with a shell collar and foamy wave tail"
+  },
+  {
+    "names": [
+      "Jellibell",
+      "Belladrop",
+      "Medusora"
+    ],
+    "type": "Water",
+    "visual": "a translucent bell-shaped jellyfish with ribbon tentacles and a glowing heart"
+  },
+  {
+    "names": [
+      "Pearlump",
+      "Clamsong",
+      "Pearlesca"
+    ],
+    "type": "Water",
+    "visual": "a smiling pearl creature sleeping inside a scalloped clam shell"
+  },
+  {
+    "names": [
+      "Rippleal",
+      "Rivervolt",
+      "Streamserp"
+    ],
+    "type": "Water",
+    "visual": "a ribbon-shaped river eel with rippling silver fins and whiskers"
+  },
+  {
+    "names": [
+      "Waddlit",
+      "Glaciguin",
+      "Emperice"
+    ],
+    "type": "Frost",
+    "visual": "a round penguin chick with an icy blue scarf and snowflake cheeks"
+  },
+  {
+    "names": [
+      "Sealush",
+      "Frostflop",
+      "Glacielle"
+    ],
+    "type": "Frost",
+    "visual": "a fluffy snow-white seal pup with a crystal snowflake tail"
+  },
+  {
+    "names": [
+      "Snowsqueak",
+      "Flurrifox",
+      "Polarwhirl"
+    ],
+    "type": "Frost",
+    "visual": "a tiny arctic mouse with snowball ears and a spiraling ice tail"
+  },
+  {
+    "names": [
+      "Icicub",
+      "Frostmane",
+      "Borealord"
+    ],
+    "type": "Frost",
+    "visual": "a pale blue polar bear cub with crystalline shoulder armor"
+  },
+  {
+    "names": [
+      "Sparkit",
+      "Voltstripe",
+      "Thunderlynx"
+    ],
+    "type": "Storm",
+    "visual": "a yellow black-striped lynx kitten with lightning whiskers and electric ear tufts"
+  },
+  {
+    "names": [
+      "Patterbat",
+      "Stormsail",
+      "Tempestral"
+    ],
+    "type": "Storm",
+    "visual": "a storm-gray bat whose broad wings resemble thunderclouds"
+  },
+  {
+    "names": [
+      "Zappip",
+      "Currentail",
+      "Voltrush"
+    ],
+    "type": "Storm",
+    "visual": "a chipmunk with glowing cheek pouches and a zigzag electric tail"
+  },
+  {
+    "names": [
+      "Rumbubble",
+      "Thundrum",
+      "Stormgong"
+    ],
+    "type": "Storm",
+    "visual": "a little round thunder drum spirit with cloud hands and gold cymbal feet"
+  },
+  {
+    "names": [
+      "Kitelet",
+      "Galestrike",
+      "Skybanner"
+    ],
+    "type": "Sky",
+    "visual": "a manta-ray-shaped wind creature with kite wings and long ribbon streamers"
+  },
+  {
+    "names": [
+      "Puffinch",
+      "Skydancer",
+      "Zephyrcrest"
+    ],
+    "type": "Sky",
+    "visual": "a tiny puffin with a balloonlike chest and sweeping feather eyebrows"
+  },
+  {
+    "names": [
+      "Featheroo",
+      "Cloudstep",
+      "Pegasora"
+    ],
+    "type": "Sky",
+    "visual": "a miniature winged pony with a wispy cloud mane and silver hooves"
+  },
+  {
+    "names": [
+      "Whirlibee",
+      "Propelwing",
+      "Aerohive"
+    ],
+    "type": "Sky",
+    "visual": "a fuzzy bumblebee with propeller-like translucent wings and aviator goggles"
+  },
+  {
+    "names": [
+      "Sunpip",
+      "Goldensong",
+      "Daybreakon"
+    ],
+    "type": "Sun",
+    "visual": "a sunflower-headed duckling with golden petals and orange webbed feet"
+  },
+  {
+    "names": [
+      "Glowkid",
+      "Solargoat",
+      "Heliopride"
+    ],
+    "type": "Sun",
+    "visual": "a golden goat kid with sun-disc horns and sparkling fleece"
+  },
+  {
+    "names": [
+      "Crumblet",
+      "Biscritter",
+      "Shortbreadon"
+    ],
+    "type": "Bakery",
+    "visual": "a shortbread armadillo with biscuit plates and a crumb-speckled nose"
+  },
+  {
+    "names": [
+      "Macaroonie",
+      "Ganachic",
+      "Macaroyal"
+    ],
+    "type": "Bakery",
+    "visual": "a pastel macaron crab with delicate sugar claws and a berry filling stripe"
+  },
+  {
+    "names": [
+      "Puffluff",
+      "Profiteroll",
+      "Chouxzilla"
+    ],
+    "type": "Bakery",
+    "visual": "a cream-puff caterpillar with tiny chocolate feet and whipped cream antennae"
+  },
+  {
+    "names": [
+      "Pretzlit",
+      "Twistail",
+      "Pretzelisk"
+    ],
+    "type": "Bakery",
+    "visual": "a little pretzel snake with salt-crystal scales and a looped tail"
+  },
+  {
+    "names": [
+      "Croissqueak",
+      "Buttermouse",
+      "Crescentail"
+    ],
+    "type": "Bakery",
+    "visual": "a golden croissant mouse with flaky crescent ears and a butter pat nose"
+  },
+  {
+    "names": [
+      "Tartling",
+      "Berrybeak",
+      "Tartavia"
+    ],
+    "type": "Bakery",
+    "visual": "a strawberry tart parrot with a custard belly and fruit-feather crest"
+  },
+  {
+    "names": [
+      "Donuttle",
+      "Glazeback",
+      "Sprinklor"
+    ],
+    "type": "Bakery",
+    "visual": "a donut snail with a pink glaze spiral shell and colorful sprinkle horns"
+  },
+  {
+    "names": [
+      "Toastot",
+      "Crustpaw",
+      "Loafguard"
+    ],
+    "type": "Bakery",
+    "visual": "a toasted bread bear cub with a butter-shaped belly patch and soft square paws"
+  },
+  {
+    "names": [
+      "Wafflep",
+      "Gridhopper",
+      "Maplejack"
+    ],
+    "type": "Bakery",
+    "visual": "a waffle-patterned grasshopper with maple-syrup amber wings"
+  },
+  {
+    "names": [
+      "Cocobit",
+      "Truffluff",
+      "Cacaoryx"
+    ],
+    "type": "Cocoa",
+    "visual": "a dark chocolate buffalo calf with truffle curls and cacao pod horns"
+  },
+  {
+    "names": [
+      "Brewbug",
+      "Beanbeetle",
+      "Espresscarab"
+    ],
+    "type": "Coffee",
+    "visual": "a glossy coffee-bean beetle with copper wing cases and tiny crema markings"
+  },
+  {
+    "names": [
+      "Foamlet",
+      "Cappupuff",
+      "Lattegeist"
+    ],
+    "type": "Coffee",
+    "visual": "a smiling cappuccino foam ghost rising from a little brown cup"
+  },
+  {
+    "names": [
+      "Moclaw",
+      "Roastcrab",
+      "Baristacean"
+    ],
+    "type": "Coffee",
+    "visual": "a coffee crab with espresso-cup claws and a roasted-bean shell"
+  },
+  {
+    "names": [
+      "Steampip",
+      "Kettlebird",
+      "Brewphoenix"
+    ],
+    "type": "Coffee",
+    "visual": "a tiny copper teapot bird with a spout beak and steam-feather tail"
+  },
+  {
+    "names": [
+      "Cherribun",
+      "Roastelope",
+      "Arabicrown"
+    ],
+    "type": "Coffee",
+    "visual": "a small antelope with red coffee-cherry antlers and glossy dark fur"
+  },
+  {
+    "names": [
+      "Sugarlet",
+      "Prismint",
+      "Candilume"
+    ],
+    "type": "Candy",
+    "visual": "a mint-green sugar crystal gecko with a faceted candy tail"
+  },
+  {
+    "names": [
+      "Gumdropod",
+      "Jellyhop",
+      "Gummisaur"
+    ],
+    "type": "Candy",
+    "visual": "a translucent jelly frog with gumdrop toes and a bright fruit-colored belly"
+  },
+  {
+    "names": [
+      "Licorip",
+      "Twizzlisk",
+      "Licoroyal"
+    ],
+    "type": "Candy",
+    "visual": "a black licorice ferret with red spiral stripes and a ribbon tail"
+  },
+  {
+    "names": [
+      "Honeybit",
+      "Nectarhug",
+      "Ambrosbear"
+    ],
+    "type": "Honey",
+    "visual": "a golden honey bear with waxy honeycomb ears and little translucent wings"
+  },
+  {
+    "names": [
+      "Buzzbud",
+      "Pollenpuff",
+      "Honeyqueen"
+    ],
+    "type": "Honey",
+    "visual": "a fuzzy honeybee queen with a flower-petal crown and amber abdomen"
+  },
+  {
+    "names": [
+      "Matchick",
+      "Teafeather",
+      "Ceremoni"
+    ],
+    "type": "Tea",
+    "visual": "a green matcha crane chick with a bamboo whisk crest and delicate tea-leaf wings"
+  },
+  {
+    "names": [
+      "Chamomil",
+      "Teapetal",
+      "Chamora"
+    ],
+    "type": "Tea",
+    "visual": "a chamomile daisy lamb with pale yellow curls and a porcelain bell collar"
+  },
+  {
+    "names": [
+      "Oolonglet",
+      "Teadrift",
+      "Jadewyrm"
+    ],
+    "type": "Tea",
+    "visual": "a tiny jade tea dragon curled around a rolled green leaf"
+  },
+  {
+    "names": [
+      "Hibipip",
+      "Bloomcup",
+      "Hibiscara"
+    ],
+    "type": "Tea",
+    "visual": "a magenta hibiscus hummingbird with petal-shaped wings and a teacup nest"
+  },
+  {
+    "names": [
+      "Bobalot",
+      "Pearlpounce",
+      "Bobalisk"
+    ],
+    "type": "Tea",
+    "visual": "a round black tapioca kitten sitting in a translucent milk-tea bubble"
+  },
+  {
+    "names": [
+      "Pumpkinip",
+      "Jackoglow",
+      "Harvesthorn"
+    ],
+    "type": "Harvest",
+    "visual": "a pumpkin-headed fawn with curled green vines and little glowing eyes"
+  },
+  {
+    "names": [
+      "Cinnamite",
+      "Spiceruff",
+      "Cassialion"
+    ],
+    "type": "Spice",
+    "visual": "a cinnamon-stick weasel with a curled bark mane and copper paws"
+  },
+  {
+    "names": [
+      "Nutmegg",
+      "Cloveling",
+      "Spiceoracle"
+    ],
+    "type": "Spice",
+    "visual": "a tiny nutmeg owl with star-anise eyes and clove feather tufts"
+  },
+  {
+    "names": [
+      "Pepperip",
+      "Chilidash",
+      "Capsidrake"
+    ],
+    "type": "Spice",
+    "visual": "a red chili pepper lizard with a green leaf crest and spicy smoke curls"
+  },
+  {
+    "names": [
+      "Vanillop",
+      "Orchipaw",
+      "Vanilluna"
+    ],
+    "type": "Spice",
+    "visual": "a cream orchid rabbit with vanilla-bean ears and pale golden spots"
+  },
+  {
+    "names": [
+      "Pebblump",
+      "Quartzquill",
+      "Gemhedge"
+    ],
+    "type": "Crystal",
+    "visual": "a crystal hedgehog with pastel gemstone spines and shiny obsidian eyes"
+  },
+  {
+    "names": [
+      "Amethip",
+      "Geodrake",
+      "Amethyron"
+    ],
+    "type": "Crystal",
+    "visual": "a purple geode dragon hatchling with an open crystal chest and tiny wings"
+  },
+  {
+    "names": [
+      "Opaloo",
+      "Prismane",
+      "Opalicorn"
+    ],
+    "type": "Crystal",
+    "visual": "an opal unicorn foal with a rainbow crystal horn and pearly mane"
+  },
+  {
+    "names": [
+      "Geopip",
+      "Slateroll",
+      "Monolithon"
+    ],
+    "type": "Earth",
+    "visual": "a little gray rock pangolin with stacked slate scales and mossy ears"
+  },
+  {
+    "names": [
+      "Sandoodle",
+      "Dunestep",
+      "Desertuft"
+    ],
+    "type": "Earth",
+    "visual": "a tiny sand-colored fennec with dune-patterned ears and a bottlebrush tail"
+  },
+  {
+    "names": [
+      "Magmole",
+      "Lavaburrow",
+      "Obsidrill"
+    ],
+    "type": "Ember",
+    "visual": "a warm charcoal mole with glowing magma claws and a copper snout"
+  },
+  {
+    "names": [
+      "Ashnib",
+      "Cinderram",
+      "Volcanguard"
+    ],
+    "type": "Ember",
+    "visual": "a dark volcanic ram lamb with ember-cracked horns and a smoky fleece"
+  },
+  {
+    "names": [
+      "Lanternip",
+      "Wickwhisk",
+      "Lanternox"
+    ],
+    "type": "Glow",
+    "visual": "a candle flame kitten peeking out of an antique brass lantern"
+  },
+  {
+    "names": [
+      "Fireflyt",
+      "Glimmerbug",
+      "Luminarach"
+    ],
+    "type": "Glow",
+    "visual": "a friendly little spider with eight delicate legs and a glowing firefly abdomen"
+  },
+  {
+    "names": [
+      "Glowcap",
+      "Luminshroom",
+      "Beaconroot"
+    ],
+    "type": "Glow",
+    "visual": "a bioluminescent mushroom spirit with turquoise spots and root-like hands"
+  },
+  {
+    "names": [
+      "Clockit",
+      "Ticktocker",
+      "Horologryph"
+    ],
+    "type": "Clockwork",
+    "visual": "a tiny brass clockwork griffin with gear wings and a clock-face chest"
+  },
+  {
+    "names": [
+      "Coglet",
+      "Gearpup",
+      "Mechanox"
+    ],
+    "type": "Clockwork",
+    "visual": "a copper wind-up puppy with a key tail and mismatched button eyes"
+  },
+  {
+    "names": [
+      "Tinfin",
+      "Submaroll",
+      "Nautiloom"
+    ],
+    "type": "Clockwork",
+    "visual": "a little brass nautilus with a porthole shell and propeller tentacles"
+  },
+  {
+    "names": [
+      "Paperpip",
+      "Foldwing",
+      "Origamoon"
+    ],
+    "type": "Paper",
+    "visual": "an origami crane chick with ivory paper folds and red ink-tipped wings"
+  },
+  {
+    "names": [
+      "Scrollit",
+      "Parchmentail",
+      "Fablewyrm"
+    ],
+    "type": "Paper",
+    "visual": "a tiny curled parchment dragon with calligraphy markings and quill horns"
+  },
+  {
+    "names": [
+      "Inkpad",
+      "Doodlebug",
+      "Scribblisk"
+    ],
+    "type": "Paper",
+    "visual": "a doodled black and white chameleon with ink-drop feet and a paper tail"
+  },
+  {
+    "names": [
+      "Buttonip",
+      "Stitchpup",
+      "Patchguard"
+    ],
+    "type": "Velvet",
+    "visual": "a patchwork plush puppy with button eyes and one floppy velvet ear"
+  },
+  {
+    "names": [
+      "Threadlet",
+      "Ribbonsilk",
+      "Tapestria"
+    ],
+    "type": "Velvet",
+    "visual": "a silk cocoon moth with ribbon antennae and embroidered jewel-toned wings"
+  },
+  {
+    "names": [
+      "Sockling",
+      "Woolwander",
+      "Knitknight"
+    ],
+    "type": "Velvet",
+    "visual": "a tiny knitted wool knight creature with a yarn pompom helmet and soft mittens"
+  },
+  {
+    "names": [
+      "Dreamdrop",
+      "Slumberfin",
+      "Reverielle"
+    ],
+    "type": "Dream",
+    "visual": "a lavender dream whale floating on a cloud with a starry nightcap"
+  },
+  {
+    "names": [
+      "Pillowip",
+      "Snoozetail",
+      "Dreamaloon"
+    ],
+    "type": "Dream",
+    "visual": "a fluffy pillow-shaped chinchilla with a crescent moon tail"
+  },
+  {
+    "names": [
+      "Duskle",
+      "Shadowpurr",
+      "Eclipsara"
+    ],
+    "type": "Moon",
+    "visual": "a charcoal moon cat with silver crescent markings and long star-speckled whiskers"
+  },
+  {
+    "names": [
+      "Moonling",
+      "Crescenthorn",
+      "Lunacorn"
+    ],
+    "type": "Moon",
+    "visual": "a silver moon gazelle with crescent horns and a midnight-blue mane"
+  },
+  {
+    "names": [
+      "Astropip",
+      "Orbitowl",
+      "Cosmowl"
+    ],
+    "type": "Star",
+    "visual": "a tiny round astronaut owl with a transparent bubble helmet and starry wings"
+  },
+  {
+    "names": [
+      "Cometkit",
+      "Stardash",
+      "Meteoryx"
+    ],
+    "type": "Star",
+    "visual": "a blue comet cheetah cub with a streaming golden stardust tail"
+  },
+  {
+    "names": [
+      "Saturnib",
+      "Ringrider",
+      "Celesturtle"
+    ],
+    "type": "Star",
+    "visual": "a little cosmic turtle with a planet-shaped shell and floating orbital rings"
+  },
+  {
+    "names": [
+      "Noteling",
+      "Melodillo",
+      "Symphonox"
+    ],
+    "type": "Melody",
+    "visual": "a small armadillo with piano-key plates and a music-note tail"
+  },
+  {
+    "names": [
+      "Chimeep",
+      "Bellhopper",
+      "Carillon"
+    ],
+    "type": "Melody",
+    "visual": "a bronze bell-shaped rabbit with long chiming metal ears and a ribbon bow"
+  },
+  {
+    "names": [
+      "Rifflet",
+      "Chordrake",
+      "Sonoragon"
+    ],
+    "type": "Melody",
+    "visual": "a teal lizard with harp-string wings and a curled treble-clef tail"
+  },
+  {
+    "names": [
+      "Maskip",
+      "Carnivale",
+      "Masquerune"
+    ],
+    "type": "Dream",
+    "visual": "a playful masked raccoon with a feathered carnival cape and a twirling ribbon tail"
+  }
+]

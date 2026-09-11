@@ -15,6 +15,13 @@
       "when": 1789151039164,
       "tag": "0001_living_randall_flagg",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1789151836573,
+      "tag": "0002_known_greymalkin",
+      "breakpoints": true
     }
   ]
 }
