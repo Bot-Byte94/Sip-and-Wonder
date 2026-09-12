@@ -14,7 +14,7 @@ export default function LoginPage() {
     event.preventDefault();
     setBusy(true); setError('');
     try {
-      const res = await fetch('/api/auth', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: mode, email, password, displayName }) });
+      const res = await fetch('/api/auth', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: mode, email, password, displayName: mode === 'signup' ? displayName : undefined }) });
       const data = await res.json() as { error?: string };
       if (!res.ok) throw new Error(data.error ?? 'Please try again.');
       window.location.assign('/');

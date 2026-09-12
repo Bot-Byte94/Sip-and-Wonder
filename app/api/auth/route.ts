@@ -7,7 +7,7 @@ const credentials = z.object({
   action: z.enum(['login', 'signup']),
   email: z.string().trim().email().max(200),
   password: z.string().min(8).max(128),
-  displayName: z.string().trim().min(1).max(80).optional(),
+  displayName: z.string().trim().max(80).optional(),
 });
 const sessionCookie = 'sip_session';
 const sessionDays = 30;
@@ -62,6 +62,7 @@ export async function POST(req: Request) {
   const parsed = credentials.safeParse(await req.json().catch(() => null));
   if (!parsed.success) return response({ error: 'Use a valid email and a password with at least 8 characters.' }, 400);
   const data = parsed.data;
+  if (data.action === 'signup' && !data.displayName?.trim()) return response({ error: 'Please share a name for your café.' }, 400);
   const db = database();
   const email = data.email.toLowerCase();
   const existing = await db.prepare('SELECT id,email,display_name AS displayName,password_hash AS passwordHash,password_salt AS passwordSalt FROM auth_users WHERE email=?').bind(email).first<{ id: string; email: string; displayName: string; passwordHash: string; passwordSalt: string }>();
