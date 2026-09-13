@@ -49,3 +49,10 @@ The art features original fantasy Siplings, not official Pokémon characters. He
 Stage 1 keeps the original adorable designs. Stage 2 and 3 use eight new `public/roster-*-evolved.webp` sheets with 204 original illustrations: stronger intermediate silhouettes and dramatic mature forms. The 98 additional families retain their existing shared-art mappings, so all 600 entries use the stage-appropriate artwork.
 
 Discovered Siplings show increasing height, natural magic power, and a signature ability. Power is encyclopedia lore, not a combat mechanic. Evolving reveals the earned form with a size/power comparison; unknown stages remain mystery cards. Reduced-motion preferences are respected. Creature IDs, collection progress, and saved companions are preserved.
+
+
+## One image per Sipling
+
+Every one of the 600 entries now loads its own `public/siplings/<id>.webp` file. The renderer uses a normal image with `object-fit: contain`, fixed square dimensions, and built-in white margins. No shared sheet or clipping path is used in the app. Unknown creatures still render only the mystery card.
+
+The existing designs were separated by connected artwork, preserving limbs and tails that crossed the old grid. Lunacorn and Carillon were redrawn individually because their original artwork touched. The existing 98 shared-art families keep their designs but now have their own files. Run `node scripts/extract-sipling-images.mjs` to regenerate extracted files; it preserves the two reviewed redraws. The original sheets and atlas metadata remain only as extraction sources.
