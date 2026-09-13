@@ -39,8 +39,8 @@ html{min-height:100%;-webkit-text-size-adjust:100%;overflow-x:hidden}body{min-he
 
 /* Each sprite remains inside its own cell; small forms leave room to grow. */
 .creature-art{overflow:hidden;background:#fff;aspect-ratio:1}
-.creature-sprite{display:block;width:100%;height:auto;aspect-ratio:1;background-repeat:no-repeat;transform-origin:center 70%}
-.creature-stage-1 .creature-sprite{transform:scale(.8)}
+.creature-sprite{display:block;position:absolute;inset:7%;width:86%;height:86%;overflow:hidden;transform-origin:center}
+.creature-stage-1 .creature-sprite{transform:scale(.86)}
 .creature-stage-3{background:#fff}
 .sipling-stats{background:#f1eaf3;border:1px solid #dbccdf;border-radius:13px;padding:15px;margin:14px 0;color:#614c6c}
 .sipling-stage{display:flex;justify-content:space-between;gap:10px;font-size:14px}
@@ -73,3 +73,5 @@ html{min-height:100%;-webkit-text-size-adjust:100%;overflow-x:hidden}body{min-he
 .encounter-art .creature-art[data-stage]{animation:float-friend 4s ease-in-out infinite}
 @media(prefers-reduced-motion:reduce){.creature-art[data-stage],.creature-art[data-rarity]::after,.evolution-transformation>.new-form{animation:none!important;transition:none!important}}
 .creature-dialog>.creature-art[data-stage]{width:240px;height:240px;min-height:240px;max-width:100%;justify-self:center;animation:none}
+
+.creature-art{flex-shrink:0}.creature-art::before{content:"";display:block;padding-top:100%}
