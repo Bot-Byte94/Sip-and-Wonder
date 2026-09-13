@@ -1,0 +1,4 @@
+import {Sparkles} from 'lucide-react';
+import type {Creature} from '@/lib/creatures';
+export function CreatureArt({creature}:{creature:Creature}){return <div role="img" aria-label={creature.name} data-rarity={creature.rarity} data-stage={creature.stage} className={'creature-art creature-stage-'+creature.stage}><span className="creature-sprite" style={{backgroundImage:`url(/roster-${creature.sheet}${creature.stage>1?'-evolved':''}.webp)`,backgroundSize:`${creature.columns*100}% ${creature.rows*100}%`,backgroundPosition:`${(creature.cell%creature.columns)*100/(creature.columns-1)}% ${Math.floor(creature.cell/creature.columns)*100/(creature.rows-1)}%`}}/></div>}
+export function MysteryArt(){return <div className="mystery-art" role="img" aria-label="Undiscovered Sipling"><Sparkles size={20}/><span>?</span><small>A little mystery</small></div>}

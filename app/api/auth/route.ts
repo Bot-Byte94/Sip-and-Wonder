@@ -18,17 +18,17 @@ function response(data: unknown, status = 200, cookie?: string) {
   return Response.json(data, { status, headers });
 }
 
-function base64(bytes: ArrayBuffer): string {
+function base64(bytes: ArrayBuffer | Uint8Array<ArrayBuffer>): string {
   return btoa(String.fromCharCode(...new Uint8Array(bytes)));
 }
 
-function bytes(length: number): Uint8Array {
+function bytes(length: number): Uint8Array<ArrayBuffer> {
   const value = new Uint8Array(length);
   crypto.getRandomValues(value);
   return value;
 }
 
-async function derive(password: string, salt: Uint8Array): Promise<string> {
+async function derive(password: string, salt: Uint8Array<ArrayBuffer>): Promise<string> {
   const key = await crypto.subtle.importKey('raw', new TextEncoder().encode(password), 'PBKDF2', false, ['deriveBits']);
   const hash = await crypto.subtle.deriveBits({ name: 'PBKDF2', salt, iterations: 100000, hash: 'SHA-256' }, key, 256);
   return base64(hash);

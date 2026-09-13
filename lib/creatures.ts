@@ -1,6 +1,10 @@
 import expandedFamilies from './expanded-families.json';
 export type CreatureStats={heart:number;warmth:number;curiosity:number;comfort:number;speed:number};
 export type Creature = { id:string;name:string;family:string;type:string;secondaryType:string;stage:number;rarity:string;trait:string;stats:CreatureStats;at:number;sheet:number;cell:number;columns:number;rows:number;description:string };
+export const stageNames=['Sprout','Awakened','Ascendant'];
+export const stageSizes=['small','large','colossal'];
+export function stageName(stage:number){return stageNames[Math.max(0,Math.min(stage-1,stageNames.length-1))]??'Unknown'}
+export function stageSize(stage:number){return stageSizes[Math.max(0,Math.min(stage-1,stageSizes.length-1))]??'unknown'}
 function rarity(stage:number,index:number){return stage===0?'Familiar':stage===1?'Rare':index%4===0?'Legendary':'Exotic'}
 const secondaryTypes=['Leaf','Mist','Stone','Tide','Song','Spark','Bloom','Velvet','Moon','Starlight','Spice','Dream'];
 const traits=['Kindling Heart','Cloudstep','Steady Shell','Raincaller','Bright Chorus','Emberkeeper','Garden Gift','Velvet Welcome','Night Guide','Wishswimmer','Sugar Rush','Little Oracle'];

@@ -43,3 +43,9 @@ Generate migrations with `npm run db:generate`. Build with `npm run build`, then
 Every API checks the app-owned session and scopes records to that account. Reflections never earn points or unlock Siplings.
 
 The art features original fantasy Siplings, not official Pokémon characters. Her religious tradition has not yet been specified; reflections can be tailored later.
+
+## Evolution artwork
+
+Stage 1 keeps the original adorable designs. Stage 2 and 3 use eight new `public/roster-*-evolved.webp` sheets with 204 original illustrations: stronger intermediate silhouettes and dramatic mature forms. The 98 additional families retain their existing shared-art mappings, so all 600 entries use the stage-appropriate artwork.
+
+Discovered Siplings show increasing height, natural magic power, and a signature ability. Power is encyclopedia lore, not a combat mechanic. Evolving reveals the earned form with a size/power comparison; unknown stages remain mystery cards. Reduced-motion preferences are respected. Creature IDs, collection progress, and saved companions are preserved.
