@@ -46,7 +46,7 @@ The art features original fantasy Siplings, not official Pokémon characters. He
 
 ## Evolution artwork
 
-Stage 1 keeps the original adorable designs. Stage 2 and 3 use eight new `public/roster-*-evolved.webp` sheets with 204 original illustrations: stronger intermediate silhouettes and dramatic mature forms. The 98 additional families retain their existing shared-art mappings, so all 600 entries use the stage-appropriate artwork.
+Stage 1 keeps the original adorable designs. Stage 2 and 3 use eight new `public/roster-*-evolved.webp` sheets with 204 original illustrations: stronger intermediate silhouettes and dramatic mature forms. The 98 additional families now use 294 individually generated illustrations with distinct species, anatomy, and dramatic evolution silhouettes.
 
 Discovered Siplings show increasing height, natural magic power, and a signature ability. Power is encyclopedia lore, not a combat mechanic. Evolving reveals the earned form with a size/power comparison; unknown stages remain mystery cards. Reduced-motion preferences are respected. Creature IDs, collection progress, and saved companions are preserved.
 
@@ -55,4 +55,8 @@ Discovered Siplings show increasing height, natural magic power, and a signature
 
 Every one of the 600 entries now loads its own `public/siplings/<id>.webp` file. The renderer uses a normal image with `object-fit: contain`, fixed square dimensions, and built-in white margins. No shared sheet or clipping path is used in the app. Unknown creatures still render only the mystery card.
 
-The existing designs were separated by connected artwork, preserving limbs and tails that crossed the old grid. Lunacorn and Carillon were redrawn individually because their original artwork touched. The existing 98 shared-art families keep their designs but now have their own files. Run `node scripts/extract-sipling-images.mjs` to regenerate extracted files; it preserves the two reviewed redraws. The original sheets and atlas metadata remain only as extraction sources.
+The existing designs were separated by connected artwork, preserving limbs and tails that crossed the old grid. Lunacorn and Carillon were redrawn individually because their original artwork touched. The 98 previously shared-art families now have their own distinct designs and descriptions. Run `node scripts/extract-sipling-images.mjs` to regenerate extracted files; it preserves the two reviewed redraws and all 294 standalone replacement illustrations. The original sheets and atlas metadata remain only as extraction sources.
+
+### Unique artwork validation
+
+All 600 entries must contain different decoded image pixels. `npm run check:creatures` checks uniqueness, dimensions, nonempty art, safe margins, IDs, file count, and standalone rendering. It also runs before `npm run build`, preventing duplicate artwork from being published accidentally. The 294 standalone replacement prompts and family designs are recorded in `docs/unique-sipling-art-prompts.json`; `scripts/import-unique-sipling-art.mjs` imports their complete individual source images without cropping. Existing creature IDs and saved progress remain compatible.

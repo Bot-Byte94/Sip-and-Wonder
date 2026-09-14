@@ -1,6 +1,7 @@
+import wildDesigns from './wild-designs.json';
 import expandedFamilies from './expanded-families.json';
 export type CreatureStats={heart:number;warmth:number;curiosity:number;comfort:number;speed:number};
-export type Creature = { id:string;name:string;family:string;type:string;secondaryType:string;stage:number;rarity:string;trait:string;stats:CreatureStats;at:number;sheet:number;cell:number;columns:number;rows:number;description:string };
+export type Creature = { id:string;name:string;family:string;type:string;secondaryType:string;stage:number;rarity:string;trait:string;stats:CreatureStats;at:number;sheet:number;cell:number;columns:number;rows:number;description:string;standaloneArt?:boolean };
 export const stageNames=['Sprout','Awakened','Ascendant'];
 export const stageSizes=['small','large','colossal'];
 export function stageName(stage:number){return stageNames[Math.max(0,Math.min(stage-1,stageNames.length-1))]??'Unknown'}
@@ -28,5 +29,5 @@ const wildCreatures:Creature[]=wildRoots.flatMap((root,rootIndex)=>wildThemes.ma
  {id:`${seed}ora`.toLowerCase(),name:`${seed}ora`,family:familyName,type:wildTypes[index%wildTypes.length],secondaryType:secondaryTypes[(index+6)%secondaryTypes.length],stage:3,rarity:index%4===0?'Legendary':'Exotic',trait:traits[(index+6)%traits.length],stats:{heart:0,warmth:0,curiosity:0,comfort:0,speed:0},at:1000000,sheet:sheetFor(2),cell,columns:5,rows:6,description:`A wildly unique, dramatically larger final form: ${seed}ora bends ${theme} light around its ${root.toLowerCase()} spirit and ${finalSurges[index%finalSurges.length]}. No two feel quite alike, even within the same family.`}
 ]})).flat();
 function enrich(creature:Creature,index:number):Creature{const surge=creature.stage===1?1:creature.stage===2?1.65:2.5;const bonus=creature.rarity==='Legendary'?20:creature.rarity==='Exotic'?10:creature.rarity==='Rare'?5:0;const stats={heart:Math.round(45*surge)+bonus+(index*7)%18,warmth:Math.round(42*surge)+bonus+(index*5)%20,curiosity:Math.round(40*surge)+bonus+(index*3)%24,comfort:Math.round(44*surge)+bonus+(index*9)%17,speed:Math.round(38*surge)+bonus+(index*11)%19};return{...creature,stats,description:`${creature.description} ${creature.type} / ${creature.secondaryType} types. Signature trait: ${creature.trait}. It has ${stats.heart} heart, ${stats.warmth} warmth, ${stats.curiosity} curiosity, ${stats.comfort} comfort, and ${stats.speed} quickness.`}}
-export const creatures:Creature[]=[...firstCreatures,...extraCreatures,...wildCreatures].map(enrich);
+export const creatures:Creature[]=[...firstCreatures,...extraCreatures,...wildCreatures.map(c=>({...c,standaloneArt:true,description:wildDesigns[c.id as keyof typeof wildDesigns]}))].map(enrich);
 export function creatureById(id:string){return creatures.find(c=>c.id===id)}

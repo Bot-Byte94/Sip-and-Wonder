@@ -50,7 +50,7 @@ for(const [sheetId,sheet] of Object.entries(atlas)){
  }
  console.log('Sheet',sheetId,'complete; connected overlaps to review:',ambiguous.length);
 }
-for(const c of creatures){if(c.sheet===12&&[22,27].includes(c.cell))continue;fs.copyFileSync(`work/isolated/${c.sheet}-${c.cell}.webp`,`public/siplings/${c.id}.webp`);}
+for(const c of creatures){if(c.standaloneArt)continue;if(c.sheet===12&&[22,27].includes(c.cell))continue;fs.copyFileSync(`work/isolated/${c.sheet}-${c.cell}.webp`,`public/siplings/${c.id}.webp`);}
 fs.writeFileSync('work/extraction-report.json',JSON.stringify(report,null,2));
 for(const c of creatures)if(!fs.existsSync(`public/siplings/${c.id}.webp`))throw Error(`Missing standalone image for ${c.id}; preserve the hand-reviewed repair assets.`);
 console.log('Verified',creatures.length,'individual Sipling image files.');
