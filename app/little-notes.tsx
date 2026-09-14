@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { Heart, Mail, X } from 'lucide-react';
-import { milestoneNote, randomNote, type LittleNote, type NoteProgress } from '@/lib/marissa-notes';
+import { milestoneNote, randomNote, rememberSurprise, type LittleNote, type NoteProgress } from '@/lib/marissa-notes';
 
 type Preferences = { paused: boolean; milestones: string[]; surprises: string[]; lastShown: number };
 const empty = (): Preferences => ({paused:false,milestones:[],surprises:[],lastShown:0});
@@ -32,10 +32,10 @@ export function LittleNotes({ userId, progress, blocked }: { userId: string; pro
       const focus = document.activeElement;
       const writing = focus instanceof HTMLElement && (focus.isContentEditable || ['INPUT','TEXTAREA','SELECT'].includes(focus.tagName));
       if(blocked || writing || document.visibilityState!=='visible' || active.current || preferences.current.paused || count.current>=3 || Date.now()<nextAt.current) return;
-      const milestone = milestoneNote(progress,preferences.current.milestones);
+      const milestone = count.current % 2 === 0 ? milestoneNote(progress,preferences.current.milestones) : null;
       const chosen = milestone?.note ?? randomNote(preferences.current.surprises);
       if(milestone) preferences.current.milestones.push(...milestone.covered);
-      else preferences.current.surprises = [...preferences.current.surprises,chosen.id].slice(-12);
+      else preferences.current.surprises = rememberSurprise(preferences.current.surprises,chosen.id);
       preferences.current.lastShown = Date.now();
       try { localStorage.setItem(storageKey,JSON.stringify(preferences.current)); } catch { /* Device-local preferences are optional. */ }
       active.current = true;
@@ -51,7 +51,7 @@ export function LittleNotes({ userId, progress, blocked }: { userId: string; pro
   }
   function openNote() {
     const chosen=randomNote(preferences.current.surprises);
-    preferences.current.surprises=[...preferences.current.surprises,chosen.id].slice(-12);
+    preferences.current.surprises=rememberSurprise(preferences.current.surprises,chosen.id);
     preferences.current.lastShown=Date.now();
     persist();
     active.current=true;
