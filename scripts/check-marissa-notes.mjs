@@ -8,6 +8,8 @@ const all=[...milestones,...surpriseNotes];
 assert.equal(all.length,200);
 assert.equal(milestones.length,40);
 assert.equal(surpriseNotes.length,160);
+assert.equal(surpriseNotes.filter(n=>n.id.startsWith('dad-joke-')).length,50);
+assert.equal(surpriseNotes.filter(n=>n.id.startsWith('christian-faith-')).length,50);
 assert.equal(new Set(all.map(n=>n.id)).size,200,'IDs must be unique');
 assert.equal(new Set(all.map(n=>n.message.toLowerCase().trim())).size,200,'Messages must be distinct');
 assert.ok(all.every(n=>n.title.length>0 && n.message.length>0 && n.message.length<300));
