@@ -1,3 +1,4 @@
+import { env } from 'cloudflare:workers';
 import { database } from '@/lib/cafe-db';
 import { z } from 'zod';
 
@@ -8,6 +9,7 @@ const credentials = z.object({
   email: z.string().trim().email().max(200),
   password: z.string().min(8).max(128),
   displayName: z.string().trim().max(80).optional(),
+  inviteCode: z.string().max(200).optional(),
 });
 const sessionCookie = 'sip_session';
 const sessionDays = 30;
@@ -50,7 +52,7 @@ function sameOrigin(req: Request) {
 
 export async function GET(req: Request) {
   const token = req.headers.get('cookie')?.match(/(?:^|; )sip_session=([^;]+)/)?.[1];
-  if (!token) return response({ user: null });
+  if (!token) return response({ user: null, inviteRequired: env.INVITE_REQUIRED === 'true' });
   const db = database();
   const session = await db.prepare('SELECT u.id,u.email,u.display_name AS displayName,s.expires_at AS expiresAt FROM auth_sessions s JOIN auth_users u ON u.id=s.user_id WHERE s.token_hash=?').bind(await hashToken(token)).first<{ id: string; email: string; displayName: string; expiresAt: string }>();
   if (!session || session.expiresAt <= new Date().toISOString()) return response({ user: null }, 200, cookie(req, '', 0));
@@ -62,6 +64,7 @@ export async function POST(req: Request) {
   const parsed = credentials.safeParse(await req.json().catch(() => null));
   if (!parsed.success) return response({ error: 'Use a valid email and a password with at least 8 characters.' }, 400);
   const data = parsed.data;
+  if (data.action === 'signup' && env.INVITE_REQUIRED === 'true' && (!env.SIGNUP_INVITE || data.inviteCode !== env.SIGNUP_INVITE)) return response({ error: 'Enter the invitation code shared with you.' }, 403);
   if (data.action === 'signup' && !data.displayName?.trim()) return response({ error: 'Please share a name for your café.' }, 400);
   const db = database();
   const email = data.email.toLowerCase();
