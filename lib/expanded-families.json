@@ -808,5 +808,65 @@
     ],
     "type": "Dream",
     "visual": "a playful masked raccoon with a feathered carnival cape and a twirling ribbon tail"
+  },
+  {
+    "names": ["Nebulynx", "Quasarron", "Astravolt"],
+    "type": "Star",
+    "rarity": "Legendary",
+    "visual": "a tiny cosmic lynx with a nebula mane, orbiting rings, and lightning trapped in its whiskers"
+  },
+  {
+    "names": ["Chronibun", "Epochhare", "Temporabbit"],
+    "type": "Clockwork",
+    "rarity": "Legendary",
+    "visual": "a pocket rabbit made of impossible clocks, with hourglass ears and a sunrise ticking in its chest"
+  },
+  {
+    "names": ["Volcanip", "Calderox", "Pyrocolossus"],
+    "type": "Ember",
+    "rarity": "Legendary",
+    "visual": "a magma fox with a crown of miniature volcanoes, obsidian paws, and a sun-hot tail"
+  },
+  {
+    "names": ["Tiderune", "Abyssalyn", "Leviacrest"],
+    "type": "Water",
+    "rarity": "Legendary",
+    "visual": "a deep-sea dragon pup with a galaxy trench inside its fins and a crown made from ocean storms"
+  },
+  {
+    "names": ["Florafae", "Verdalume", "Worldbloom"],
+    "type": "Grove",
+    "rarity": "Legendary",
+    "visual": "a radiant flower spirit carrying a whole living forest in its antlers and glowing pollen wings"
+  },
+  {
+    "names": ["Mirrormite", "Prismox", "Refractiona"],
+    "type": "Crystal",
+    "rarity": "Legendary",
+    "visual": "a crystalline beetle that bends reality into rainbow shards and wears a miniature prism shell"
+  },
+  {
+    "names": ["Stormlet", "Tempestrix", "Thundervane"],
+    "type": "Storm",
+    "rarity": "Legendary",
+    "visual": "a thunderbird cub with cloud paws, electric feathers, and a hurricane swirling in its beak"
+  },
+  {
+    "names": ["Dreamip", "Somnara", "Oneiragon"],
+    "type": "Dream",
+    "rarity": "Legendary",
+    "visual": "a velvet dream dragon with moonlit eyes, impossible ribbon wings, and stars spilling from its breath"
+  },
+  {
+    "names": ["Glimmerimp", "Radiantor", "Luxoracle"],
+    "type": "Glow",
+    "rarity": "Legendary",
+    "visual": "a mischievous light spirit with a miniature sun halo, comet horns, and a cloak of living auroras"
+  },
+  {
+    "names": ["Melodrop", "Harmonicael", "Worldsong"],
+    "type": "Melody",
+    "rarity": "Legendary",
+    "visual": "a celestial songbird with instrument-feather wings whose voice turns silence into constellations"
   }
 ]
