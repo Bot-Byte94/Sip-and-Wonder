@@ -17,7 +17,7 @@ const {creatures,creatureById,familyStageCount}=await import(moduleUrl('creature
 const {act,initialAdventure,evolveTarget,bondNeeded,unlockedCreatures,publicAdventure,habitats}=await import(moduleUrl('adventure'));
 const {evolutionProfile}=await import(moduleUrl('evolution'));
 const forms=JSON.parse(fs.readFileSync('lib/fourth-evolutions.json','utf8'));
-assert.equal(forms.length,12);
+assert.equal(forms.length,13);
 assert.equal(creatures.length,630+forms.length);
 assert.equal(new Set(creatures.map(c=>c.id)).size,creatures.length);
 assert.deepEqual(creatures.slice(630,633).map(c=>c.id),['astralynx','solcanis','eversylva']);

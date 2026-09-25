@@ -82,5 +82,12 @@
     "predecessor": "galaxkoi",
     "ability": "Cosmic current",
     "description": "A celestial koi-serpent that loops through the air like a river of stars. Its comet fins and orbiting planet carry wishes between worlds, guiding every lost traveler home."
+  },
+  {
+    "id": "lattepoltergeist",
+    "name": "Lattepoltergeist",
+    "predecessor": "lattegeist",
+    "ability": "Caffeinated chaos",
+    "description": "The crazy fourth form of the Foamlet family: a godly cappuccino ghost cyclone erupting from a cracked espresso cup. Its orbiting saucers, crooked cinnamon antlers, and wild crema ribbons turn every quiet caf? into a joyful storm."
   }
 ]
