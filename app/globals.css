@@ -42,7 +42,7 @@ html{min-height:100%;-webkit-text-size-adjust:100%;overflow-x:hidden}body{min-he
 .creature-art{overflow:hidden;background:#fff;aspect-ratio:1}
 .creature-sprite{display:block;position:absolute;inset:7%;width:86%;height:86%;object-fit:contain;object-position:center;transform-origin:center}
 .creature-art[data-stage="4"]{overflow:visible}
-.creature-art[data-stage="4"] .creature-sprite{inset:0;width:100%;height:100%;object-fit:contain}
+.creature-art[data-stage="4"] .creature-sprite{inset:3%;width:94%;height:94%;object-fit:contain;object-position:center;padding:10px;box-sizing:border-box}
 .creature-stage-1 .creature-sprite{transform:scale(.86)}
 .creature-stage-3{background:#fff}
 .sipling-stats{background:#f1eaf3;border:1px solid #dbccdf;border-radius:13px;padding:15px;margin:14px 0;color:#614c6c}
