@@ -15,7 +15,7 @@ Object.assign(config, {
   preview_urls: false,
   d1_databases: [{ binding: 'DB', database_name: 'sip-and-wonder', database_id: databaseId, migrations_dir: '../../drizzle' }],
   r2_buckets: bucketName ? [{ binding: 'BUCKET', bucket_name: bucketName }] : [],
-  vars: { ...config.vars, INVITE_REQUIRED: 'true' },
+  vars: { ...config.vars, INVITE_REQUIRED: 'true', ADMIN_EMAIL: 'conner.harley@gmail.com' },
 });
 delete config.topLevelName;
 await writeFile(new URL('wrangler.cloudflare.json', output), JSON.stringify(config, null, 2) + '\n');
