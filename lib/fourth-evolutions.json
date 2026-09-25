@@ -54,5 +54,33 @@
     "predecessor": "oneiragon",
     "ability": "Sanctuary of dreams",
     "description": "The transcendent guardian of the Dreamip family. Six constellation ribbons unfurl as wings beneath a crescent crown, and twin silken tails weave safe paths through sleep. Its quiet presence turns restless dreams into welcoming worlds."
+  },
+  {
+    "id": "verdantheon",
+    "name": "Verdantheon",
+    "predecessor": "verdantia",
+    "ability": "Worldroot sanctuary",
+    "description": "A godly forest sovereign with six branching tree-antlers and emerald wings. Verdantheon raises one hoof to call a living canopy into being, giving every small Sipling a safe place to grow."
+  },
+  {
+    "id": "cindervalkyr",
+    "name": "Cindervalkyr",
+    "predecessor": "cindrake",
+    "ability": "Solar rebirth",
+    "description": "A radiant phoenix-salamander deity whose asymmetric flame wings carve a path through the sky. Cindervalkyr dives through sparks and returns brighter, warming every cup and courageous heart below."
+  },
+  {
+    "id": "noctyra",
+    "name": "Noctyra",
+    "predecessor": "noctilume",
+    "ability": "Moonlit prophecy",
+    "description": "A moon-moth oracle with four crescent wings and a silver lunar halo. Noctyra spirals through the night, turning anxious dreams into quiet constellations and gentle guidance."
+  },
+  {
+    "id": "galaxion",
+    "name": "Galaxion",
+    "predecessor": "galaxkoi",
+    "ability": "Cosmic current",
+    "description": "A celestial koi-serpent that loops through the air like a river of stars. Its comet fins and orbiting planet carry wishes between worlds, guiding every lost traveler home."
   }
 ]
