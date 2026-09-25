@@ -14,10 +14,11 @@ Later forms are evolution-only: trail encounters, coffee totals, and riddles can
 
 ## Artwork
 
-Five individual illustrations generated with the built-in image generation tool, using the preceding tier as a style and identity reference, then edited individually for single-tail anatomy. Exact final edit prompts are in `docs/emerald-siren-art-prompts.json`. Shared art direction: a friendly emerald-haired, green-eyed, single-tailed coffee mermaid with a gold star crown, cream foam accents, cream/emerald clothing for the early forms, cozy polished fantasy game illustration (chibi proportions only in early tiers), complete centered silhouette, generous margins, white background, no text, corporate logos, scenery, or frame.
+Five individual illustrations generated with the built-in image generation tool, using the preceding tier as a style and identity reference, then edited individually for twin-tail anatomy. Exact final edit prompts are in `docs/emerald-siren-art-prompts.json`. Shared art direction: a friendly emerald-haired, green-eyed, twin-tailed coffee mermaid with a gold star crown, cream foam accents, cream/emerald clothing for the early forms, cozy polished fantasy game illustration (chibi proportions only in early tiers), complete centered silhouette, generous margins, white background, no text, corporate logos, scenery, or frame.
 
-Stage prompts add: a baby nestled in a star-emblem coffee cup; a small mermaid holding a bean; a taller mermaid with larger foam fins and a floating bean; an adult pearl ocean goddess with an ivory halter, asymmetric champagne drape, and gold-and-pearl waist chains; and an adult final queen with a black-and-emerald jeweled outfit, gold body chains, opera gloves, and a dark emerald cape. Every form has exactly one tail.
+Stage prompts add: a baby nestled in a star-emblem coffee cup; a small mermaid holding a bean; a taller mermaid with larger foam fins and a floating bean; an adult pearl ocean goddess with an ivory halter, asymmetric champagne drape, and gold-and-pearl waist chains; and an adult final queen with a black-and-emerald jeweled outfit, gold body chains, opera gloves, and a dark emerald cape. Every form has exactly two distinct tails, each ending in its own fan fin.
 
 `node scripts/import-siren-art.mjs <originals-directory>` converts the five ID-named PNGs to complete 384×384 WebP assets in `public/siplings`, using the same sizing and margins as the existing individual-art pipeline. It does not crop a character sheet.
 
 Run `npm run check:creatures` to verify images and progression, including every bond boundary and the terminal fifth tier.
+
