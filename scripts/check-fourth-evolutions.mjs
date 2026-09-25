@@ -98,20 +98,37 @@ for(let i=0;i<sirens.length;i++){
 }
 assert.equal(sirenState.evolutions,4);
 for(const c of sirens.slice(1))assert(!unlockedCreatures(initialAdventure(),1000000).includes(c.id));
-// Select the last legendary Coffee encounter: the new first-tier siren is reachable.
+// Dedicated 1% Coffee encounter: independent of stage and ordinary legendary pools.
 const encounterState=initialAdventure();let rollIndex=0;
-act(encounterState,0,{type:'explore',habitat:'hearth'},()=>[.2,0,.999999][rollIndex++]);
+act(encounterState,0,{type:'explore',habitat:'hearth'},()=>[.009999,.2,0,.999999][rollIndex++]);
 assert.equal(encounterState.encounter.creatureId,'sirenbean');
 act(encounterState,0,{type:'recruit'});assert(encounterState.discovered.includes('sirenbean'));
 for(const stageRoll of [.8,.98]){
  const state=initialAdventure();let index=0;
- act(state,0,{type:'explore',habitat:'hearth'},()=>[stageRoll,0,.999999][index++]);
+ act(state,0,{type:'explore',habitat:'hearth'},()=>[.5,stageRoll,0,.999999][index++]);
  assert(!sirens.slice(1).some(c=>c.id===state.encounter.creatureId));
 }
 for(const answer of ['clock','kindness','joke']){
- const state=initialAdventure();state.discovered=creatures.filter(c=>!sirens.slice(1).some(s=>s.id===c.id)).map(c=>c.id);
+ const state=initialAdventure();state.discovered=creatures.filter(c=>!sirens.some(s=>s.id===c.id)).map(c=>c.id);
  try{act(state,0,{type:'solve-riddle',difficulty:'hard',answer},()=>0);}
  catch(error){if(!/Not quite/.test(error.message))throw error;continue;}
- assert(!sirens.slice(1).some(c=>state.discovered.includes(c.id)));break;
+ assert(!sirens.some(c=>state.discovered.includes(c.id)));break;
 }
 console.log('Unique five-tier siren verified: discovery, four bonded evolutions, finite increasing stats, retained forms, final stage, and no reward bypass.');
+
+// Exactly 1 of 100 equally spaced rolls wins, without an alternate pool bypass.
+let wins=0;
+for(let i=0;i<100;i++){
+ const state=initialAdventure();let n=0;
+ act(state,0,{type:'explore',habitat:'hearth'},()=>n++===0?i/100:.999999);
+ if(state.encounter.creatureId==='sirenbean')wins++;
+}
+assert.equal(wins,1);
+for(const c of sirens)assert(!unlockedCreatures(initialAdventure(),1000000).includes(c.id));
+const queen=creatureById('sovereignsiren');
+for(const c of creatures.filter(c=>c.id!==queen.id)){
+ assert(evolutionProfile(queen).power>evolutionProfile(c).power);
+ for(const stat of Object.keys(queen.stats))assert(queen.stats[stat]>c.stats[stat]);
+}
+console.log('Siren 1% encounter boundary, reward exclusions and strongest final form verified.');
+

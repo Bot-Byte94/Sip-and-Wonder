@@ -43,10 +43,10 @@ const transcendentCreatures:Creature[]=fourthEvolutions.map((form,index)=>{
 // Append the only five-tier family without renumbering existing Siplings.
 const sirenCreatures:Creature[]=sirenForms.map((form,index)=>({
  id:form.id,name:form.name,family:'Sirenbean',type:'Coffee',secondaryType:'Tide',
- stage:index+1,rarity:'Legendary',trait:'One of a Kind',standaloneArt:true,
- stats:{heart:65*(index+1),warmth:60*(index+1),curiosity:55*(index+1),comfort:62*(index+1),speed:50*(index+1)},
+ stage:index+1,rarity:'Legendary',trait:'Beyond Rare',standaloneArt:true,
+ stats:index===4?{heart:999,warmth:999,curiosity:999,comfort:999,speed:999}:{heart:65*(index+1),warmth:60*(index+1),curiosity:55*(index+1),comfort:62*(index+1),speed:50*(index+1)},
  at:1000000,sheet:0,cell:0,columns:1,rows:1,
- description:form.description+' The only mermaid Sipling family, with five tiers of wonder. Coffee / Tide types. Signature trait: One of a Kind.'
+ description:form.description+' The only mermaid Sipling family, with five tiers of wonder. Coffee / Tide types. Signature trait: Beyond Rare. Sirenbean has a 1% encounter chance per Sugarwood Café exploration; later forms require bonding.'
 }));
 export const creatures:Creature[]=[...baseCreatures,...transcendentCreatures,...sirenCreatures];
 export function isEvolutionOnly(c:Creature){return c.stage>=4||(c.family==='Sirenbean'&&c.stage>1);}

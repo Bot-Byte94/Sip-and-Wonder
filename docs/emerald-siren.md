@@ -26,3 +26,5 @@ Run `npm run check:creatures` to verify images and progression, including every 
 The final Sovereign Siren is a divine cosmic ocean goddess with a celestial halo, galaxy-woven cape, twin tails, Genesis Tide, a 12 m lore height, and a 9,999 lore power rating. Power is descriptive and does not alter discovery or bonding.
 
 Her final outfit is a structured black-and-emerald corset with gold boning, ornate filigree, and a luminous emerald centerpiece.
+
+Sirenbean has a dedicated 1% chance per Sugarwood Café exploration. The entire family is excluded from coffee milestone and riddle rewards. Later tiers require bonding; Sovereign Siren has the highest lore power and all five companion stats in the roster.
