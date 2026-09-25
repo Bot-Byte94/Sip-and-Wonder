@@ -60,3 +60,24 @@ The existing designs were separated by connected artwork, preserving limbs and t
 ### Unique artwork validation
 
 All 600 entries must contain different decoded image pixels. `npm run check:creatures` checks uniqueness, dimensions, nonempty art, safe margins, IDs, file count, and standalone rendering. It also runs before `npm run build`, preventing duplicate artwork from being published accidentally. The 294 standalone replacement prompts and family designs are recorded in `docs/unique-sipling-art-prompts.json`; `scripts/import-unique-sipling-art.mjs` imports their complete individual source images without cropping. Existing creature IDs and saved progress remain compatible.
+
+### Legendary artwork (#307?336)
+
+The ten Legendary families, from Nebulynx through Worldsong, use 30 individually generated illustrations with distinct evolution stages. Their prompts, roster numbers, and reviewed WebP hashes are recorded in `docs/legendary-sipling-art-prompts.json`. Place the original PNGs in `work/legendary-siplings/` and run `node scripts/import-legendary-sipling-art.mjs` to reproduce the 384-pixel assets without cropping. The Legendary entries are marked as standalone artwork so atlas extraction preserves them. `npm run check:creatures` verifies their roster mapping and reviewed image hashes in addition to the collection-wide image checks.
+
+### Fourth evolutions
+
+Eight Legendary families have a fourth, Transcendent form:
+
+- Astravolt → Astralynx
+- Pyrocolossus → Solcanis
+- Worldbloom → Eversylva
+- Temporabbit → Aeternabbit
+- Leviacrest → Oceanthrone
+- Refractiona → Prismarch
+- Thundervane → Tempestaur
+- Oneiragon → Reverion
+
+Reach 90 bond with the third-stage friend to evolve; earlier forms remain in the collection. These forms are earned through bonding, not trail encounters, weekly riddles, or coffee totals. They are appended as entries 631–638, keeping every existing ID and collection number stable. Family paths and stage totals adapt to three or four forms, with stronger fourth-stage stats and signature abilities. Run `npm run check:evolutions` for progression regression checks.
+
+Fourth-evolution artwork specifications are recorded in `docs/fourth-evolution-art.json`. With all eight original PNGs in `work/fourth-siplings/`, run `node scripts/import-fourth-evolution-art.mjs` to normalize them to individual 384-pixel WebP assets.

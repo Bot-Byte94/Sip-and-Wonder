@@ -1,0 +1,82 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "id": "astralynx",
+      "name": "Astralynx",
+      "family": "Nebulynx",
+      "predecessor": "astravolt",
+      "type": "Star",
+      "ability": "Constellation sanctuary",
+      "visual": "An immense regal cosmic lynx with six elegant legs, a vast aurora mane, branching crystalline antlers of starlight, twin long comet tails curling behind it, orbiting golden rings. Midnight blue and violet fur. Stands proudly, kind wise eyes. Fourth evolution transforms the familiar lynx into a celestial guardian."
+    },
+    {
+      "id": "solcanis",
+      "name": "Solcanis",
+      "family": "Volcanip",
+      "predecessor": "pyrocolossus",
+      "type": "Ember",
+      "ability": "Everlasting hearth",
+      "visual": "An immense magma fox guardian with a gleaming obsidian armored body threaded with golden lava, a crown of three volcanic peaks, nine immense fiery tails fanned like a sun corona, broad lionlike chest, strong paws, gentle proud expression. Deep red, orange, black and molten gold. Fourth evolution of a volcano fox."
+    },
+    {
+      "id": "eversylva",
+      "name": "Eversylva",
+      "family": "Florafae",
+      "predecessor": "worldbloom",
+      "type": "Grove",
+      "ability": "Sanctuary of seasons",
+      "visual": "An immense luminous forest deer spirit guardian, four majestic legs, an ancient living tree growing as branching antlers with four different seasons in its foliage, six translucent leaf wings arranged in three pairs, long flowing moss mane and flowering vine tail, delicate gold markings and kind wise eyes. Emerald, ivory, rose and gold. Fourth evolution of a flower deer fairy."
+    },
+    {
+      "id": "aeternabbit",
+      "name": "Aeternabbit",
+      "family": "Chronibun",
+      "predecessor": "temporabbit",
+      "type": "Clockwork",
+      "ability": "Timeless haven",
+      "visual": "A colossal elegant clockwork hare guardian, elongated hourglass ears filled with glowing stardust, ivory and antique-gold articulated body, four sure-footed legs, elaborate mechanical winglike fans of interlocking gears, a radiant sunrise clock in its chest, long flowing pendulum tail. Regal kind face, elaborate mature silhouette. Entire ears, gears and tail fit in frame.",
+      "description": "The transcendent guardian of the Chronibun family. Starlit sands drift through its hourglass ears while golden gear fans unfold around a sunrise heart. In its gentle company, every hurried moment finds time to breathe."
+    },
+    {
+      "id": "oceanthrone",
+      "name": "Oceanthrone",
+      "family": "Tiderune",
+      "predecessor": "leviacrest",
+      "type": "Water",
+      "ability": "Ocean of wishes",
+      "visual": "An immense deep-sea dragon guardian, six strong webbed legs, powerful serpentine torso curled in an S, a grand coral-and-pearl crown, two pairs of enormous flowing translucent galaxy-filled fins, broad whale-fluke tail. Midnight navy, luminous turquoise and pearl white. Flowing watery mane, kind wise face, clearly anatomical standalone dragon with ocean magic integrated into its body.",
+      "description": "The transcendent guardian of the Tiderune family. Six webbed paws cross silent seas beneath a pearl-and-coral crown. Vast galaxy fins hold the ocean's forgotten wishes, and its gentle wake guides small travelers safely home."
+    },
+    {
+      "id": "prismarch",
+      "name": "Prismarch",
+      "family": "Mirrormite",
+      "predecessor": "refractiona",
+      "type": "Crystal",
+      "ability": "Prismatic refuge",
+      "visual": "An immense crystalline stag-beetle guardian, six beautifully articulated gem legs, an enormous faceted opal shell opening into four broad prismatic crystalline wings, tall branching diamond mandibles framing a friendly luminous insect face. Rich amethyst, aquamarine, opal and gold refractions. Dramatic beetle silhouette, spectacular segmented crystal abdomen and regal translucent crest.",
+      "description": "The transcendent guardian of the Mirrormite family. Its opal shell unfolds into four magnificent prism wings, scattering gentle rainbow paths around six jeweled legs. A shelter of refracted light welcomes every wandering friend."
+    },
+    {
+      "id": "tempestaur",
+      "name": "Tempestaur",
+      "family": "Stormlet",
+      "predecessor": "thundervane",
+      "type": "Storm",
+      "ability": "Eye of serenity",
+      "visual": "An immense majestic thunderbird griffin guardian, four powerful cloud-furred legs, two pairs of swept electric feather wings, a great flowing storm mane, antlerlike lightning crest and long fan of gold-tipped tail feathers. Storm blue, pearl white and electric gold. Mighty mature eagle head with wise friendly eyes, graceful grounded pose, all four wings clearly separated.",
+      "description": "The transcendent guardian of the Stormlet family. Four lightning-bright wings shelter a calm heart at the center of every storm. Its cloud-soft paws and golden tail feathers lead tired travelers into a pocket of peaceful sky."
+    },
+    {
+      "id": "reverion",
+      "name": "Reverion",
+      "family": "Dreamip",
+      "predecessor": "oneiragon",
+      "type": "Dream",
+      "ability": "Sanctuary of dreams",
+      "visual": "An immense regal velvet dream dragon guardian, long serpentine body with four elegant legs, six looping ribbon wings filled with constellations, crown of crescent-moon antlers, twin long silk tails curling around its body. Midnight violet, lavender, silver and rose-gold stars. Wise serene face, dramatically transformed anatomy and full elaborate silhouette.",
+      "description": "The transcendent guardian of the Dreamip family. Six constellation ribbons unfurl as wings beneath a crescent crown, and twin silken tails weave safe paths through sleep. Its quiet presence turns restless dreams into welcoming worlds."
+    }
+  ]
+}

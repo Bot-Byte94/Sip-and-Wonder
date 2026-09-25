@@ -1,0 +1,58 @@
+[
+  {
+    "id": "astralynx",
+    "name": "Astralynx",
+    "predecessor": "astravolt",
+    "ability": "Constellation sanctuary",
+    "description": "The transcendent guardian of the Nebulynx family. Six sure-footed paws cross the night sky beneath a sweeping aurora mane, while twin comet tails gather lost wishes into a shelter of stars."
+  },
+  {
+    "id": "solcanis",
+    "name": "Solcanis",
+    "predecessor": "pyrocolossus",
+    "ability": "Everlasting hearth",
+    "description": "The transcendent guardian of the Volcanip family. Nine sun-bright tails surround an obsidian body veined with golden magma. Its mighty volcanic crown keeps a gentle, everlasting warmth for every friend beneath it."
+  },
+  {
+    "id": "eversylva",
+    "name": "Eversylva",
+    "predecessor": "worldbloom",
+    "ability": "Sanctuary of seasons",
+    "description": "The transcendent guardian of the Florafae family. All four seasons bloom in its living antlers, and six luminous leaf wings shelter a forest of small lives. Wherever it rests, a sanctuary takes root."
+  },
+  {
+    "id": "aeternabbit",
+    "name": "Aeternabbit",
+    "predecessor": "temporabbit",
+    "ability": "Timeless haven",
+    "description": "The transcendent guardian of the Chronibun family. Starlit sands drift through its hourglass ears while golden gear fans unfold around a sunrise heart. In its gentle company, every hurried moment finds time to breathe."
+  },
+  {
+    "id": "oceanthrone",
+    "name": "Oceanthrone",
+    "predecessor": "leviacrest",
+    "ability": "Ocean of wishes",
+    "description": "The transcendent guardian of the Tiderune family. Six webbed paws cross silent seas beneath a pearl-and-coral crown. Vast galaxy fins hold the ocean's forgotten wishes, and its gentle wake guides small travelers safely home."
+  },
+  {
+    "id": "prismarch",
+    "name": "Prismarch",
+    "predecessor": "refractiona",
+    "ability": "Prismatic refuge",
+    "description": "The transcendent guardian of the Mirrormite family. Its opal shell unfolds into four magnificent prism wings, scattering gentle rainbow paths around six jeweled legs. A shelter of refracted light welcomes every wandering friend."
+  },
+  {
+    "id": "tempestaur",
+    "name": "Tempestaur",
+    "predecessor": "thundervane",
+    "ability": "Eye of serenity",
+    "description": "The transcendent guardian of the Stormlet family. Four lightning-bright wings shelter a calm heart at the center of every storm. Its cloud-soft paws and golden tail feathers lead tired travelers into a pocket of peaceful sky."
+  },
+  {
+    "id": "reverion",
+    "name": "Reverion",
+    "predecessor": "oneiragon",
+    "ability": "Sanctuary of dreams",
+    "description": "The transcendent guardian of the Dreamip family. Six constellation ribbons unfurl as wings beneath a crescent crown, and twin silken tails weave safe paths through sleep. Its quiet presence turns restless dreams into welcoming worlds."
+  }
+]

@@ -1,0 +1,276 @@
+{
+  "mode": "built-in image_gen",
+  "count": 30,
+  "assets": [
+    {
+      "id": "nebulynx",
+      "name": "Nebulynx",
+      "number": 307,
+      "family": "Nebulynx",
+      "stage": 1,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Nebulynx, legendary Star creature, evolution stage 1 of the Nebulynx family. Family design: a tiny cosmic lynx with a nebula mane, orbiting rings, and lightning trapped in its whiskers. Baby form, adorable compact body, big expressive eyes, tiny paws, soft rounded proportions, small nascent magical features. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "6fe642e99993f3dc7137aab734b0efbc4a92f09f2be1a02dd8361ea1b162c272"
+    },
+    {
+      "id": "quasarron",
+      "name": "Quasarron",
+      "number": 308,
+      "family": "Nebulynx",
+      "stage": 2,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Quasarron, legendary Star creature, evolution stage 2 of the Nebulynx family. Family design: a tiny cosmic lynx with a nebula mane, orbiting rings, and lightning trapped in its whiskers. Intermediate form, athletic adolescent body with developed limbs, bold confident stance, growing magical crest and armor. Distinct anatomy and silhouette between baby and grand final evolution. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "c76be8afb977410b256d078c463d71017656152679dbde510d5eaa365c5dc083"
+    },
+    {
+      "id": "astravolt",
+      "name": "Astravolt",
+      "number": 309,
+      "family": "Nebulynx",
+      "stage": 3,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Astravolt, legendary Star creature, evolution stage 3 of the Nebulynx family. Family design: a tiny cosmic lynx with a nebula mane, orbiting rings, and lightning trapped in its whiskers. Magnificent final evolution, regal guardian with dramatically transformed mature anatomy, sweeping elaborate magical features, impressive silhouette, powerful but kind face. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "b216793da8e07b1482043265e94708f644441be96e36776027e8b6117acc5c3d"
+    },
+    {
+      "id": "chronibun",
+      "name": "Chronibun",
+      "number": 310,
+      "family": "Chronibun",
+      "stage": 1,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Chronibun, legendary Clockwork creature, evolution stage 1 of the Chronibun family. Family design: a pocket rabbit made of impossible clocks, with hourglass ears and a sunrise ticking in its chest. Baby form, adorable compact body, big expressive eyes, tiny paws, soft rounded proportions, small nascent magical features. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "d1e031f7d1a0fe5f8096642c7eb1ef5a860404eb4d389d9899df668fa1e34fee"
+    },
+    {
+      "id": "epochhare",
+      "name": "Epochhare",
+      "number": 311,
+      "family": "Chronibun",
+      "stage": 2,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Epochhare, legendary Clockwork creature, evolution stage 2 of the Chronibun family. Family design: a pocket rabbit made of impossible clocks, with hourglass ears and a sunrise ticking in its chest. Intermediate form, athletic adolescent body with developed limbs, bold confident stance, growing magical crest and armor. Distinct anatomy and silhouette between baby and grand final evolution. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "fd780cdb946e247a0b0ba44b5f082193a96e0961fd99b8df23c21041542c018b"
+    },
+    {
+      "id": "temporabbit",
+      "name": "Temporabbit",
+      "number": 312,
+      "family": "Chronibun",
+      "stage": 3,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Temporabbit, legendary Clockwork creature, evolution stage 3 of the Chronibun family. Family design: a pocket rabbit made of impossible clocks, with hourglass ears and a sunrise ticking in its chest. Magnificent final evolution, regal guardian with dramatically transformed mature anatomy, sweeping elaborate magical features, impressive silhouette, powerful but kind face. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "06a2a0680b11ba4eb5a69171cff6a5ec1554e95d189f0279201bf650812458d3"
+    },
+    {
+      "id": "volcanip",
+      "name": "Volcanip",
+      "number": 313,
+      "family": "Volcanip",
+      "stage": 1,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Volcanip, legendary Ember creature, evolution stage 1 of the Volcanip family. Family design: a magma fox with a crown of miniature volcanoes, obsidian paws, and a sun-hot tail. Baby form, adorable compact body, big expressive eyes, tiny paws, soft rounded proportions, small nascent magical features. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "4cb52ace97c0e3f6ea0b29dd69f1922f38c4b9e70d489c6dcb0dbb9686434f15"
+    },
+    {
+      "id": "calderox",
+      "name": "Calderox",
+      "number": 314,
+      "family": "Volcanip",
+      "stage": 2,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Calderox, legendary Ember creature, evolution stage 2 of the Volcanip family. Family design: a magma fox with a crown of miniature volcanoes, obsidian paws, and a sun-hot tail. Intermediate form, athletic adolescent body with developed limbs, bold confident stance, growing magical crest and armor. Distinct anatomy and silhouette between baby and grand final evolution. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "cf5029f75ae79c895d99fa072c76acb49356bdbe82badea5b61c099bae2c438c"
+    },
+    {
+      "id": "pyrocolossus",
+      "name": "Pyrocolossus",
+      "number": 315,
+      "family": "Volcanip",
+      "stage": 3,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Pyrocolossus, legendary Ember creature, evolution stage 3 of the Volcanip family. Family design: a magma fox with a crown of miniature volcanoes, obsidian paws, and a sun-hot tail. Magnificent final evolution, regal guardian with dramatically transformed mature anatomy, sweeping elaborate magical features, impressive silhouette, powerful but kind face. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "83e5277334a7f17567ef868e0cd31a965f2d6bdb1675c1062f3238a188b21606"
+    },
+    {
+      "id": "tiderune",
+      "name": "Tiderune",
+      "number": 316,
+      "family": "Tiderune",
+      "stage": 1,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Tiderune, legendary Water creature, evolution stage 1 of the Tiderune family. Family design: a deep-sea dragon pup with a galaxy trench inside its fins and a crown made from ocean storms. Baby form, adorable compact body, big expressive eyes, tiny paws, soft rounded proportions, small nascent magical features. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "7caba35bbfed5223dff07cac5305514f36cc20fcf6792f7ab550098d5f1c7c8d"
+    },
+    {
+      "id": "abyssalyn",
+      "name": "Abyssalyn",
+      "number": 317,
+      "family": "Tiderune",
+      "stage": 2,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Abyssalyn, legendary Water creature, evolution stage 2 of the Tiderune family. Family design: a deep-sea dragon pup with a galaxy trench inside its fins and a crown made from ocean storms. Intermediate form, athletic adolescent body with developed limbs, bold confident stance, growing magical crest and armor. Distinct anatomy and silhouette between baby and grand final evolution. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "940699444d6eae0de73bed26a63a9a79b2807eaecfe1b52a0e925b193e7db1ef"
+    },
+    {
+      "id": "leviacrest",
+      "name": "Leviacrest",
+      "number": 318,
+      "family": "Tiderune",
+      "stage": 3,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Leviacrest, legendary Water creature, evolution stage 3 of the Tiderune family. Family design: a deep-sea dragon pup with a galaxy trench inside its fins and a crown made from ocean storms. Magnificent final evolution, regal guardian with dramatically transformed mature anatomy, sweeping elaborate magical features, impressive silhouette, powerful but kind face. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "e54b44cb7ba7e748eeb19a98a6c6fb3d87e7db76f5d3d9ab0b9dd78c7d4f01f2"
+    },
+    {
+      "id": "florafae",
+      "name": "Florafae",
+      "number": 319,
+      "family": "Florafae",
+      "stage": 1,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Florafae, legendary Grove creature, evolution stage 1 of the Florafae family. Family design: a radiant flower spirit carrying a whole living forest in its antlers and glowing pollen wings. Baby form, adorable compact body, big expressive eyes, tiny paws, soft rounded proportions, small nascent magical features. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "d621425d62caa92c86de88dc636c922bd6092602ef8822137ef31ffaf60e2999"
+    },
+    {
+      "id": "verdalume",
+      "name": "Verdalume",
+      "number": 320,
+      "family": "Florafae",
+      "stage": 2,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Verdalume, legendary Grove creature, evolution stage 2 of the Florafae family. Family design: a radiant flower spirit carrying a whole living forest in its antlers and glowing pollen wings. Intermediate form, athletic adolescent body with developed limbs, bold confident stance, growing magical crest and armor. Distinct anatomy and silhouette between baby and grand final evolution. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "5dd052f8f253c1a8ac51e139d457aded04c999889fc03d5a07b6e24db8c56e24"
+    },
+    {
+      "id": "worldbloom",
+      "name": "Worldbloom",
+      "number": 321,
+      "family": "Florafae",
+      "stage": 3,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Worldbloom, legendary Grove creature, evolution stage 3 of the Florafae family. Family design: a radiant flower spirit carrying a whole living forest in its antlers and glowing pollen wings. Magnificent final evolution, regal guardian with dramatically transformed mature anatomy, sweeping elaborate magical features, impressive silhouette, powerful but kind face. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "ebe81a9a9a53126046be24d47dc61e4258b29c2659cc03af40b65e19134ef5fc"
+    },
+    {
+      "id": "mirrormite",
+      "name": "Mirrormite",
+      "number": 322,
+      "family": "Mirrormite",
+      "stage": 1,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Mirrormite, legendary Crystal creature, evolution stage 1 of the Mirrormite family. Family design: a crystalline beetle that bends reality into rainbow shards and wears a miniature prism shell. Baby form, adorable compact body, big expressive eyes, tiny paws, soft rounded proportions, small nascent magical features. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "e5fddc3a95ccaad77d740ddba3a7ed1d1d2e96779ecd31f196e19ad17c69ae76"
+    },
+    {
+      "id": "prismox",
+      "name": "Prismox",
+      "number": 323,
+      "family": "Mirrormite",
+      "stage": 2,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Prismox, legendary Crystal creature, evolution stage 2 of the Mirrormite family. Family design: a crystalline beetle that bends reality into rainbow shards and wears a miniature prism shell. Intermediate form, athletic adolescent body with developed limbs, bold confident stance, growing magical crest and armor. Distinct anatomy and silhouette between baby and grand final evolution. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "df7f2002f60cbee71a3ae50c7f53e1c0a0252a4e31d66d9a8fb45db77a370899"
+    },
+    {
+      "id": "refractiona",
+      "name": "Refractiona",
+      "number": 324,
+      "family": "Mirrormite",
+      "stage": 3,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Refractiona, legendary Crystal creature, evolution stage 3 of the Mirrormite family. Family design: a crystalline beetle that bends reality into rainbow shards and wears a miniature prism shell. Magnificent final evolution, regal guardian with dramatically transformed mature anatomy, sweeping elaborate magical features, impressive silhouette, powerful but kind face. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "7a0a35b3a20b29b4ebdff5e48087395fd686d4620405029fa0d8e91aa742d16f"
+    },
+    {
+      "id": "stormlet",
+      "name": "Stormlet",
+      "number": 325,
+      "family": "Stormlet",
+      "stage": 1,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Stormlet, legendary Storm creature, evolution stage 1 of the Stormlet family. Family design: a thunderbird cub with cloud paws, electric feathers, and a hurricane swirling in its beak. Baby form, adorable compact body, big expressive eyes, tiny paws, soft rounded proportions, small nascent magical features. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "13195f4f601846c37316997982cc0233c34100ef2db278c4a1f1a9bbc10ccf2c"
+    },
+    {
+      "id": "tempestrix",
+      "name": "Tempestrix",
+      "number": 326,
+      "family": "Stormlet",
+      "stage": 2,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Tempestrix, legendary Storm creature, evolution stage 2 of the Stormlet family. Family design: a thunderbird cub with cloud paws, electric feathers, and a hurricane swirling in its beak. Intermediate form, athletic adolescent body with developed limbs, bold confident stance, growing magical crest and armor. Distinct anatomy and silhouette between baby and grand final evolution. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "6f150f0df2ade8bb282ab5a87d0b11980e5b252e0f18931b89fc143ce34f7cb3"
+    },
+    {
+      "id": "thundervane",
+      "name": "Thundervane",
+      "number": 327,
+      "family": "Stormlet",
+      "stage": 3,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Thundervane, legendary Storm creature, evolution stage 3 of the Stormlet family. Family design: a thunderbird cub with cloud paws, electric feathers, and a hurricane swirling in its beak. Magnificent final evolution, regal guardian with dramatically transformed mature anatomy, sweeping elaborate magical features, impressive silhouette, powerful but kind face. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "04ee596a352c1dd783579c8f664082cdd7941fac693c95f39ec683ec7dc1baf4"
+    },
+    {
+      "id": "dreamip",
+      "name": "Dreamip",
+      "number": 328,
+      "family": "Dreamip",
+      "stage": 1,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Dreamip, legendary Dream creature, evolution stage 1 of the Dreamip family. Family design: a velvet dream dragon with moonlit eyes, impossible ribbon wings, and stars spilling from its breath. Baby form, adorable compact body, big expressive eyes, tiny paws, soft rounded proportions, small nascent magical features. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "000e967558d522266d4c5541ab50860f13b72f60a31f58a149feb398a99b0d46"
+    },
+    {
+      "id": "somnara",
+      "name": "Somnara",
+      "number": 329,
+      "family": "Dreamip",
+      "stage": 2,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Somnara, legendary Dream creature, evolution stage 2 of the Dreamip family. Family design: a velvet dream dragon with moonlit eyes, impossible ribbon wings, and stars spilling from its breath. Intermediate form, athletic adolescent body with developed limbs, bold confident stance, growing magical crest and armor. Distinct anatomy and silhouette between baby and grand final evolution. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "2b61948dc48b7b9ca66b615daa15f8e862ce9d5d1b27e110cdd64d0bbf7b80eb"
+    },
+    {
+      "id": "oneiragon",
+      "name": "Oneiragon",
+      "number": 330,
+      "family": "Dreamip",
+      "stage": 3,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Oneiragon, legendary Dream creature, evolution stage 3 of the Dreamip family. Family design: a velvet dream dragon with moonlit eyes, impossible ribbon wings, and stars spilling from its breath. Magnificent final evolution, regal guardian with dramatically transformed mature anatomy, sweeping elaborate magical features, impressive silhouette, powerful but kind face. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "d79df7e404a5101a8100fcfd1c85376b640c0630c8d18767427907b5643a37be"
+    },
+    {
+      "id": "glimmerimp",
+      "name": "Glimmerimp",
+      "number": 331,
+      "family": "Glimmerimp",
+      "stage": 1,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Glimmerimp, legendary Glow creature, evolution stage 1 of the Glimmerimp family. Family design: a mischievous light spirit with a miniature sun halo, comet horns, and a cloak of living auroras. Baby form, adorable compact body, big expressive eyes, tiny paws, soft rounded proportions, small nascent magical features. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "80c47e90c3c56eb56d75c0b61340ce13621801711d006f1b9a32cc25d8bcc31e"
+    },
+    {
+      "id": "radiantor",
+      "name": "Radiantor",
+      "number": 332,
+      "family": "Glimmerimp",
+      "stage": 2,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Radiantor, legendary Glow creature, evolution stage 2 of the Glimmerimp family. Family design: a mischievous light spirit with a miniature sun halo, comet horns, and a cloak of living auroras. Intermediate form, athletic adolescent body with developed limbs, bold confident stance, growing magical crest and armor. Distinct anatomy and silhouette between baby and grand final evolution. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "55e607f430b6fd5bb6c16d6def15c3518979843fc5c0ecc26e6a5c08813258e0"
+    },
+    {
+      "id": "luxoracle",
+      "name": "Luxoracle",
+      "number": 333,
+      "family": "Glimmerimp",
+      "stage": 3,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Luxoracle, legendary Glow creature, evolution stage 3 of the Glimmerimp family. Family design: a mischievous light spirit with a miniature sun halo, comet horns, and a cloak of living auroras. Magnificent final evolution, regal guardian with dramatically transformed mature anatomy, sweeping elaborate magical features, impressive silhouette, powerful but kind face. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "69d30f5515009ff98b0141307cf6c9e0900aacbd8b24ed75d59d2367bd706a43"
+    },
+    {
+      "id": "melodrop",
+      "name": "Melodrop",
+      "number": 334,
+      "family": "Melodrop",
+      "stage": 1,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Melodrop, legendary Melody creature, evolution stage 1 of the Melodrop family. Family design: a celestial songbird with instrument-feather wings whose voice turns silence into constellations. Baby form, adorable compact body, big expressive eyes, tiny paws, soft rounded proportions, small nascent magical features. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "af808fb15cb7511bca463cc5b7217bfa98e36a24f75b3b1f5c84fa87b27e6985"
+    },
+    {
+      "id": "harmonicael",
+      "name": "Harmonicael",
+      "number": 335,
+      "family": "Melodrop",
+      "stage": 2,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Harmonicael, legendary Melody creature, evolution stage 2 of the Melodrop family. Family design: a celestial songbird with instrument-feather wings whose voice turns silence into constellations. Intermediate form, athletic adolescent body with developed limbs, bold confident stance, growing magical crest and armor. Distinct anatomy and silhouette between baby and grand final evolution. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "2c505e7959babaac65baaa24366bcdad609b61c544a8adf2984e0b1f6b9b3fd5"
+    },
+    {
+      "id": "worldsong",
+      "name": "Worldsong",
+      "number": 336,
+      "family": "Melodrop",
+      "stage": 3,
+      "prompt": "Use case: stylized-concept. One standalone square collectible creature illustration for Sip & Wonder. Worldsong, legendary Melody creature, evolution stage 3 of the Melodrop family. Family design: a celestial songbird with instrument-feather wings whose voice turns silence into constellations. Magnificent final evolution, regal guardian with dramatically transformed mature anatomy, sweeping elaborate magical features, impressive silhouette, powerful but kind face. Premium polished hand-painted fantasy monster game art, crisp outlines, rich colors, dimensional shading. Original character. Exactly ONE creature, full body all limbs ears wings and tail visible, centered on pure white background with at least 15 percent completely empty margin on EVERY side. No text, labels, border, floor shadow, props, multiple views or collage. Magic integral to creature anatomy.",
+      "sha256": "8184ef6a7fe05c14f60aa3e94cae0589f9b94e7edc68df566ada5b5cd9903c12"
+    }
+  ]
+}

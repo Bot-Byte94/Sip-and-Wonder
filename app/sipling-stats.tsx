@@ -1,14 +1,14 @@
 'use client';
 import {ArrowRight,Sparkles,Zap,Ruler} from 'lucide-react';
 import {Dialog,DialogContent,DialogTitle,DialogDescription} from '@/components/ui/dialog';
-import type {Creature} from '@/lib/creatures';
+import {familyStageCount,type Creature} from '@/lib/creatures';
 import {evolutionProfile} from '@/lib/evolution';
 import {CreatureArt} from './creature-art';
 
 export function SiplingStats({creature}:{creature:Creature}){
  const profile=evolutionProfile(creature);
  return <section className="sipling-stats" aria-label={creature.name+' size and power'}>
-  <div className="sipling-stage"><span>Stage {creature.stage} / 3</span><strong>{profile.label}</strong></div>
+  <div className="sipling-stage"><span>Stage {creature.stage} / {familyStageCount(creature.family)}</span><strong>{profile.label}</strong></div>
   <div className="sipling-measures"><span><Ruler size={16}/><strong>{profile.height} m</strong><small>Height</small></span><span><Zap size={16}/><strong>{profile.power}</strong><small>Power</small></span></div>
   <p className="signature-power"><Sparkles size={16}/>{profile.ability}</p>
   <small className="power-note">A glimpse of its natural magic.</small>
