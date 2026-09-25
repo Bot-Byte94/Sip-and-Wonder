@@ -1,7 +1,7 @@
 import {Sparkles} from 'lucide-react';
 import type {Creature} from '@/lib/creatures';
 export function CreatureArt({creature}:{creature:Creature}){
- const assetRoot='/siplings';
+ const assetRoot=creature.stage===4?'/transparent-siplings':'/siplings';
  const assetId=creature.id;
  return <div data-rarity={creature.rarity} data-stage={creature.stage} className={'creature-art creature-stage-'+creature.stage}>
   {/* Each entry owns a complete image; no atlas windows or runtime cropping. */}
