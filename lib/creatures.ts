@@ -1,10 +1,11 @@
 import fourthEvolutions from './fourth-evolutions.json';
 import wildDesigns from './wild-designs.json';
 import expandedFamilies from './expanded-families.json';
+import sirenForms from './emerald-siren.json';
 export type CreatureStats={heart:number;warmth:number;curiosity:number;comfort:number;speed:number};
 export type Creature = { id:string;name:string;family:string;type:string;secondaryType:string;stage:number;rarity:string;trait:string;stats:CreatureStats;at:number;sheet:number;cell:number;columns:number;rows:number;description:string;standaloneArt?:boolean };
-export const stageNames=['Sprout','Awakened','Ascendant','Transcendent'];
-export const stageSizes=['small','large','colossal','mythic'];
+export const stageNames=['Sprout','Awakened','Ascendant','Transcendent','Sovereign'];
+export const stageSizes=['small','large','colossal','mythic','sovereign'];
 export function stageName(stage:number){return stageNames[Math.max(0,Math.min(stage-1,stageNames.length-1))]??'Unknown'}
 export function stageSize(stage:number){return stageSizes[Math.max(0,Math.min(stage-1,stageSizes.length-1))]??'unknown'}
 function rarity(stage:number,index:number){return stage===0?'Familiar':stage===1?'Rare':index%4===0?'Legendary':'Exotic'}
@@ -39,5 +40,14 @@ const transcendentCreatures:Creature[]=fourthEvolutions.map((form,index)=>{
  if(!previous||previous.stage!==3)throw new Error('Fourth evolution requires a third-stage predecessor: '+form.predecessor);
  return enrich({...previous,id:form.id,name:form.name,stage:4,standaloneArt:true,description:form.description},baseCreatures.length+index);
 });
-export const creatures:Creature[]=[...baseCreatures,...transcendentCreatures];
+// Append the only five-tier family without renumbering existing Siplings.
+const sirenCreatures:Creature[]=sirenForms.map((form,index)=>({
+ id:form.id,name:form.name,family:'Sirenbean',type:'Coffee',secondaryType:'Tide',
+ stage:index+1,rarity:'Legendary',trait:'One of a Kind',standaloneArt:true,
+ stats:{heart:65*(index+1),warmth:60*(index+1),curiosity:55*(index+1),comfort:62*(index+1),speed:50*(index+1)},
+ at:1000000,sheet:0,cell:0,columns:1,rows:1,
+ description:form.description+' The only mermaid Sipling family, with five tiers of wonder. Coffee / Tide types. Signature trait: One of a Kind.'
+}));
+export const creatures:Creature[]=[...baseCreatures,...transcendentCreatures,...sirenCreatures];
+export function isEvolutionOnly(c:Creature){return c.stage>=4||(c.family==='Sirenbean'&&c.stage>1);}
 export function familyStageCount(family:string){return Math.max(...creatures.filter(c=>c.family===family).map(c=>c.stage));}
