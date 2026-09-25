@@ -22,3 +22,7 @@ Stage prompts add: a baby nestled in a star-emblem coffee cup; a small mermaid h
 
 Run `npm run check:creatures` to verify images and progression, including every bond boundary and the terminal fifth tier.
 
+
+The final Sovereign Siren is a divine cosmic ocean goddess with a celestial halo, galaxy-woven cape, twin tails, Genesis Tide, a 12 m lore height, and a 9,999 lore power rating. Power is descriptive and does not alter discovery or bonding.
+
+Her final outfit is a structured black-and-emerald corset with gold boning, ornate filigree, and a luminous emerald centerpiece.
