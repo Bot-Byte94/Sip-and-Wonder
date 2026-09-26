@@ -2,8 +2,10 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import sharp from 'sharp';
 import {createHash} from 'node:crypto';
-import {buildSync} from 'esbuild';
-const source=buildSync({entryPoints:['lib/creatures.ts'],bundle:true,platform:'node',format:'esm',write:false}).outputFiles[0].text;
+import ts from 'typescript';
+// Match the progression check's portable loader; no native bundler is needed.
+const roster=fs.readFileSync('lib/creatures.ts','utf8').replace(/import (\w+) from '(\.\/.+?\.json)';/g,(_,binding,path)=>`const ${binding}=${fs.readFileSync('lib/'+path,'utf8')};`);
+const source=ts.transpileModule(roster,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ES2022}}).outputText;
 const {creatures}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
 const legendaryPlan=JSON.parse(fs.readFileSync('docs/legendary-sipling-art-prompts.json','utf8'));
 assert.equal(legendaryPlan.assets.length,30,'All 30 Legendary illustrations must be planned');

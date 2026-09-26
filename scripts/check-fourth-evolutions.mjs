@@ -14,14 +14,14 @@ function moduleUrl(name){
  modules.set(name,url);return url;
 }
 const {creatures,creatureById,familyStageCount}=await import(moduleUrl('creatures'));
-const {act,initialAdventure,evolveTarget,bondNeeded,unlockedCreatures,publicAdventure,habitats}=await import(moduleUrl('adventure'));
+const {act,initialAdventure,evolveTarget,bondNeeded,unlockedCreatures,publicAdventure,habitats,habitatResidents,habitatPreviews}=await import(moduleUrl('adventure'));
 const {evolutionProfile}=await import(moduleUrl('evolution'));
 const forms=JSON.parse(fs.readFileSync('lib/fourth-evolutions.json','utf8'));
 assert.equal(forms.length,13);
-assert.equal(creatures.length,630+forms.length);
+assert.equal(creatures.length,630+forms.length+5);
 assert.equal(new Set(creatures.map(c=>c.id)).size,creatures.length);
 assert.deepEqual(creatures.slice(630,633).map(c=>c.id),['astralynx','solcanis','eversylva']);
-assert.deepEqual(creatures.slice(630).map(c=>c.id),forms.map(c=>c.id));
+assert.deepEqual(creatures.slice(630,630+forms.length).map(c=>c.id),forms.map(c=>c.id));
 assert.equal(creatures[306].id,'nebulynx');
 assert.equal(creatures[335].id,'worldsong');
 for(const form of forms){
@@ -55,7 +55,7 @@ assert.equal(bondNeeded('bean'),18);assert.equal(bondNeeded('fernox'),42);
 for(const habitat of habitats)for(const roll of [.2,.8,.98]){
  const state=initialAdventure();let calls=0;
  act(state,0,{type:'explore',habitat:habitat.id},()=>calls++===0?roll:0);
- assert(creatureById(state.encounter.creatureId).stage<4);
+ assert.equal(creatureById(state.encounter.creatureId).stage,1);
 }
 // Even after every ordinary Legendary is owned, a hard riddle cannot bypass bonding.
 let solved=false;
@@ -67,3 +67,89 @@ for(const answer of ['clock','kindness','joke']){
 }
 assert(solved,'The current weekly riddle should be tested');
 console.log('Fourth-tier progression verified: bond boundary, ownership, retained forms, terminal stages, stats, stable numbering, and no trail/riddle/coffee bypass.');
+
+const sirens=creatures.filter(c=>c.family==='Sirenbean');
+assert.deepEqual(sirens.map(c=>c.stage),[1,2,3,4,5]);
+assert.equal(familyStageCount('Sirenbean'),5);
+assert.deepEqual(creatures.filter(c=>c.stage===5).map(c=>c.id),['sovereignsiren']);
+assert.deepEqual(creatures.slice(643).map(c=>c.id),sirens.map(c=>c.id));
+const sirenState=initialAdventure();
+sirenState.discovered.push(sirens[0].id);
+for(let i=0;i<sirens.length;i++){
+ const c=sirens[i],profile=evolutionProfile(c);
+ assert(Number.isFinite(profile.height)&&Number.isFinite(profile.power)&&profile.ability);
+ if(i===4){
+  assert.equal(profile.label,'Sovereign');assert.equal(bondNeeded(c.id),0);
+  assert.throws(()=>act(sirenState,0,{type:'evolve',creatureId:c.id}),/final form/);
+  continue;
+ }
+ const next=sirens[i+1],after=evolutionProfile(next);
+ assert.equal(evolveTarget(c.id).id,next.id);
+ assert(after.height>profile.height&&after.power>profile.power);
+ for(const key of Object.keys(c.stats))assert(next.stats[key]>c.stats[key]);
+ assert.throws(()=>act(initialAdventure(),0,{type:'evolve',creatureId:c.id}),/Meet this Sipling/);
+ sirenState.bonds[c.id]=bondNeeded(c.id)-1;
+ assert.throws(()=>act(sirenState,0,{type:'evolve',creatureId:c.id}),/Grow your bond/);
+ sirenState.bonds[c.id]=bondNeeded(c.id);
+ act(sirenState,0,{type:'evolve',creatureId:c.id});
+ assert(publicAdventure(sirenState,0).seen.includes(next.id));
+ assert(sirenState.discovered.includes(c.id));assert.equal(sirenState.bonds[next.id],0);
+ assert.throws(()=>act(sirenState,0,{type:'evolve',creatureId:c.id}),/already/);
+}
+assert.equal(sirenState.evolutions,4);
+for(const c of sirens.slice(1))assert(!unlockedCreatures(initialAdventure(),1000000).includes(c.id));
+// Dedicated 1% Coffee encounter: independent of stage and ordinary legendary pools.
+const encounterState=initialAdventure();let rollIndex=0;
+act(encounterState,0,{type:'explore',habitat:'hearth'},()=>[.009999,.2,0,.999999][rollIndex++]);
+assert.equal(encounterState.encounter.creatureId,'sirenbean');
+act(encounterState,0,{type:'recruit'});assert(encounterState.discovered.includes('sirenbean'));
+for(const stageRoll of [.8,.98]){
+ const state=initialAdventure();let index=0;
+ act(state,0,{type:'explore',habitat:'hearth'},()=>[.5,stageRoll,0,.999999][index++]);
+ assert(!sirens.slice(1).some(c=>c.id===state.encounter.creatureId));
+}
+for(const answer of ['clock','kindness','joke']){
+ const state=initialAdventure();state.discovered=creatures.filter(c=>!sirens.some(s=>s.id===c.id)).map(c=>c.id);
+ try{act(state,0,{type:'solve-riddle',difficulty:'hard',answer},()=>0);}
+ catch(error){if(!/Not quite/.test(error.message))throw error;continue;}
+ assert(!sirens.some(c=>state.discovered.includes(c.id)));break;
+}
+console.log('Unique five-tier siren verified: discovery, four bonded evolutions, finite increasing stats, retained forms, final stage, and no reward bypass.');
+
+// Exactly 1 of 100 equally spaced rolls wins, without an alternate pool bypass.
+let wins=0;
+for(let i=0;i<100;i++){
+ const state=initialAdventure();let n=0;
+ act(state,0,{type:'explore',habitat:'hearth'},()=>n++===0?i/100:.999999);
+ if(state.encounter.creatureId==='sirenbean')wins++;
+}
+assert.equal(wins,1);
+for(const c of sirens)assert(!unlockedCreatures(initialAdventure(),1000000).includes(c.id));
+const queen=creatureById('sovereignsiren');
+for(const c of creatures.filter(c=>c.id!==queen.id)){
+ assert(evolutionProfile(queen).power>evolutionProfile(c).power);
+ for(const stat of Object.keys(queen.stats))assert(queen.stats[stat]>c.stats[stat]);
+}
+console.log('Siren 1% encounter boundary, reward exclusions and strongest final form verified.');
+
+
+for(const h of habitats){
+ assert(habitatResidents(h.id).length>0);
+ assert(habitatResidents(h.id).every(c=>c.stage===1));
+ for(const rarityRoll of [0,.019999,.02,.999999])for(const choiceRoll of [0,.5,.999999]){
+  const state=initialAdventure();const rolls=h.id==='hearth'?[.5,rarityRoll,choiceRoll]:[rarityRoll,choiceRoll];let i=0;
+  act(state,0,{type:'explore',habitat:h.id},()=>rolls[i++]??choiceRoll);
+  assert.equal(creatureById(state.encounter.creatureId).stage,1);
+ }
+}
+const previews=Object.values(habitatPreviews(creatures.map(c=>c.id))).flat();
+assert(previews.every(c=>c.stage===1));
+assert.equal(new Set(previews.map(c=>c.family)).size,previews.length);
+assert(Object.values(habitatPreviews([])).every(p=>p.length===0));
+for(const answer of ['clock','kindness','joke']){
+ const state=initialAdventure();const before=new Set(state.discovered);
+ try{act(state,0,{type:'solve-riddle',difficulty:'hard',answer},()=>0);}
+ catch(error){if(/Not quite/.test(error.message))continue;throw error;}
+ assert(state.discovered.filter(id=>!before.has(id)).every(id=>creatureById(id).stage===1));break;
+}
+console.log('Starter-only adventure rewards and distinct known starter previews verified.');

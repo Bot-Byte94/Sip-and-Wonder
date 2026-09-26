@@ -1,0 +1,42 @@
+[
+  {
+    "id": "sirenbean",
+    "name": "Sirenbean",
+    "height": 0.22,
+    "power": 65,
+    "ability": "Little foam wish",
+    "description": "A tiny emerald-haired mermaid nestled in a warm coffee cup. Her little star crown glows whenever a friend arrives."
+  },
+  {
+    "id": "foamfin",
+    "name": "Foamfin",
+    "height": 0.55,
+    "power": 130,
+    "ability": "Emerald-tail ripple",
+    "description": "Two graceful green tails carry her through curls of coffee steam. She offers her favorite coffee bean to anyone who needs a little kindness."
+  },
+  {
+    "id": "cremasiren",
+    "name": "Cremasiren",
+    "height": 1.2,
+    "power": 260,
+    "ability": "Crest of crema",
+    "description": "Her foamy fins unfurl into sweeping waves as a golden star crown awakens. Her song turns an ordinary coffee break into a moment of wonder."
+  },
+  {
+    "id": "emeraldsiren",
+    "name": "Emerald Siren",
+    "height": 2.4,
+    "power": 480,
+    "ability": "Emerald tide",
+    "description": "An emerald guardian with twin flowing emerald tails and a halo of floating coffee beans. Her warm magic makes the café feel like a safe harbor."
+  },
+  {
+    "id": "sovereignsiren",
+    "name": "Sovereign Siren",
+    "height": 12,
+    "power": 9999,
+    "ability": "Genesis Tide",
+    "description": "A divine mermaid sovereign crowned by the stars. Her twin tails command celestial oceans, while Genesis Tide awakens new worlds of wonder beneath her galaxy-woven mantle."
+  }
+]
