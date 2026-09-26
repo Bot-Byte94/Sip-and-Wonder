@@ -14,7 +14,7 @@ function moduleUrl(name){
  modules.set(name,url);return url;
 }
 const {creatures,creatureById,familyStageCount}=await import(moduleUrl('creatures'));
-const {act,initialAdventure,evolveTarget,bondNeeded,unlockedCreatures,publicAdventure,habitats}=await import(moduleUrl('adventure'));
+const {act,initialAdventure,evolveTarget,bondNeeded,unlockedCreatures,publicAdventure,habitats,habitatResidents,habitatPreviews}=await import(moduleUrl('adventure'));
 const {evolutionProfile}=await import(moduleUrl('evolution'));
 const forms=JSON.parse(fs.readFileSync('lib/fourth-evolutions.json','utf8'));
 assert.equal(forms.length,13);
@@ -55,7 +55,7 @@ assert.equal(bondNeeded('bean'),18);assert.equal(bondNeeded('fernox'),42);
 for(const habitat of habitats)for(const roll of [.2,.8,.98]){
  const state=initialAdventure();let calls=0;
  act(state,0,{type:'explore',habitat:habitat.id},()=>calls++===0?roll:0);
- assert(creatureById(state.encounter.creatureId).stage<4);
+ assert.equal(creatureById(state.encounter.creatureId).stage,1);
 }
 // Even after every ordinary Legendary is owned, a hard riddle cannot bypass bonding.
 let solved=false;
@@ -132,3 +132,24 @@ for(const c of creatures.filter(c=>c.id!==queen.id)){
 }
 console.log('Siren 1% encounter boundary, reward exclusions and strongest final form verified.');
 
+
+for(const h of habitats){
+ assert(habitatResidents(h.id).length>0);
+ assert(habitatResidents(h.id).every(c=>c.stage===1));
+ for(const rarityRoll of [0,.019999,.02,.999999])for(const choiceRoll of [0,.5,.999999]){
+  const state=initialAdventure();const rolls=h.id==='hearth'?[.5,rarityRoll,choiceRoll]:[rarityRoll,choiceRoll];let i=0;
+  act(state,0,{type:'explore',habitat:h.id},()=>rolls[i++]??choiceRoll);
+  assert.equal(creatureById(state.encounter.creatureId).stage,1);
+ }
+}
+const previews=Object.values(habitatPreviews(creatures.map(c=>c.id))).flat();
+assert(previews.every(c=>c.stage===1));
+assert.equal(new Set(previews.map(c=>c.family)).size,previews.length);
+assert(Object.values(habitatPreviews([])).every(p=>p.length===0));
+for(const answer of ['clock','kindness','joke']){
+ const state=initialAdventure();const before=new Set(state.discovered);
+ try{act(state,0,{type:'solve-riddle',difficulty:'hard',answer},()=>0);}
+ catch(error){if(/Not quite/.test(error.message))continue;throw error;}
+ assert(state.discovered.filter(id=>!before.has(id)).every(id=>creatureById(id).stage===1));break;
+}
+console.log('Starter-only adventure rewards and distinct known starter previews verified.');

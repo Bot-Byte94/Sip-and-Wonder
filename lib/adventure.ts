@@ -6,12 +6,25 @@ export const habitats=[
 {id:'sky',name:'Cloudtop Gardens',subtitle:'Thunder paws & soaring wings',types:['Sky','Storm','Sun','Melody','Cloud'],color:'sky'},
 {id:'workshop',name:'Lantern Workshop',subtitle:'Clockwork wonders & paper magic',types:['Clockwork','Paper','Glow','Earth'],color:'workshop'},
 {id:'dream',name:'Starlight Hollow',subtitle:'Moonlit mysteries & velvet dreams',types:['Dream','Moon','Star','Velvet'],color:'dream'}];
+// Trails and their cards share the same starter-only roster.
+export function habitatResidents(habitatId:string){
+ const habitat=habitats.find(h=>h.id===habitatId);
+ return habitat?creatures.filter(c=>c.stage===1&&habitat.types.includes(c.type)):[];
+}
+export function habitatPreviews(knownIds:string[]){
+ const known=new Set(knownIds),used=new Set<string>();
+ return Object.fromEntries(habitats.map(h=>{
+  const preview=habitatResidents(h.id).filter(c=>known.has(c.id)&&!used.has(c.family))
+   .sort((a,b)=>h.types.indexOf(a.type)-h.types.indexOf(b.type)).slice(0,3);
+  preview.forEach(c=>used.add(c.family));return [h.id,preview];
+ }));
+}
 export type Memory={cards:string[];revealed:number[];matched:number[];moves:number;complete:boolean};
 export type RiddleDifficulty='easy'|'medium'|'hard';
 export type RiddleState={week:string;question:string;solved:boolean;difficulty:RiddleDifficulty|null};
 export const DAILY_TREAT_LIMIT=8;
-const riddleCreature=creatures.find(c=>c.at===1000000&&c.rarity!=='Legendary')?.id??'aerocrystal';
-const legendaryCreatures=creatures.filter(c=>c.at===1000000&&c.rarity==='Legendary'&&c.family!=='Sirenbean'&&!isEvolutionOnly(c)).map(c=>c.id);
+const riddleCreature=creatures.find(c=>c.at===1000000&&c.stage===1&&c.rarity!=='Legendary')?.id??'aerocrystal';
+const legendaryCreatures=creatures.filter(c=>c.at===1000000&&c.stage===1&&c.rarity==='Legendary'&&c.family!=='Sirenbean'&&!isEvolutionOnly(c)).map(c=>c.id);
 const riddles=[{question:'I have a face but no eyes, hands but no arms, and I keep your café moving. What am I?',answer:'clock'},{question:'I grow brighter when shared, but I never get smaller. What am I?',answer:'kindness'},{question:'I can be cracked, made, told, and played. What am I?',answer:'joke'}];
 function dayKey(date=new Date()){return date.toISOString().slice(0,10)}
 function weekKey(date=new Date()){const day=new Date(Date.UTC(date.getUTCFullYear(),date.getUTCMonth(),date.getUTCDate()));const thursday=new Date(day);thursday.setUTCDate(day.getUTCDate()-day.getUTCDay()+4);const yearStart=new Date(Date.UTC(thursday.getUTCFullYear(),0,1));return `${thursday.getUTCFullYear()}-${String(Math.ceil((((thursday.getTime()-yearStart.getTime())/86400000)+1)/7)).padStart(2,'0')}`}
@@ -44,7 +57,7 @@ export function act(state:Adventure,coffeeTotal:number,action:{type:string;habit
  ensureCurrent(state);
  const unlocked=unlockedCreatures(state,coffeeTotal);
  switch(action.type){
- case 'explore':{if(state.encounter)throw new Error('You already have a visitor waiting. Welcome them or wave goodbye first.');const habitat=habitats.find(h=>h.id===action.habitat);if(!habitat)throw new Error('Choose a trail.');if(state.tickets<1)throw new Error('Finish a matching game to earn more trail tickets.');const sirenEncounter=habitat.id==='hearth'&&random()<.01;const roll=random();const stage=roll<.7?1:roll<.95?2:3;const pool=creatures.filter(c=>habitat.types.includes(c.type)&&c.family!=='Sirenbean'&&c.stage===stage&&!isEvolutionOnly(c));const legendary=pool.filter(c=>c.rarity==='Legendary');const ordinary=pool.filter(c=>c.rarity!=='Legendary');const encounterPool=legendary.length&&random()<.02?legendary:ordinary.length?ordinary:pool;const visitor=sirenEncounter?creatureById('sirenbean')!:encounterPool[Math.floor(random()*encounterPool.length)];state.tickets--;state.explorations++;state.visits[habitat.id]=(state.visits[habitat.id]??0)+1;state.seen=[...new Set([...(state.seen??['bean']),visitor.id])];state.encounter={creatureId:visitor.id,habitat:habitat.id};return `You found ${visitor.name}!`;}
+ case 'explore':{if(state.encounter)throw new Error('You already have a visitor waiting. Welcome them or wave goodbye first.');const habitat=habitats.find(h=>h.id===action.habitat);if(!habitat)throw new Error('Choose a trail.');if(state.tickets<1)throw new Error('Finish a matching game to earn more trail tickets.');const sirenEncounter=habitat.id==='hearth'&&random()<.01;const pool=habitatResidents(habitat.id).filter(c=>c.family!=='Sirenbean');const legendary=pool.filter(c=>c.rarity==='Legendary');const ordinary=pool.filter(c=>c.rarity!=='Legendary');const encounterPool=legendary.length&&random()<.02?legendary:ordinary.length?ordinary:pool;const visitor=sirenEncounter?creatureById('sirenbean')!:encounterPool[Math.floor(random()*encounterPool.length)];state.tickets--;state.explorations++;state.visits[habitat.id]=(state.visits[habitat.id]??0)+1;state.seen=[...new Set([...(state.seen??['bean']),visitor.id])];state.encounter={creatureId:visitor.id,habitat:habitat.id};return `You found ${visitor.name}!`;}
  case 'recruit':{if(!state.encounter)throw new Error('Explore a trail to meet someone new.');const c=creatureById(state.encounter.creatureId)!;const cost=c.stage;if(state.treats<cost)throw new Error(`You need ${cost} treats. A matching game will help.`);state.treats-=cost;if(!state.discovered.includes(c.id)){state.discovered.push(c.id);state.recruits=(state.recruits??0)+1;}state.bonds[c.id]=(state.bonds[c.id]??0)+3;state.stars+=c.stage;state.encounter=null;return `${c.name} is happy to be your friend. She is so loved.`;}
  case 'leave':state.encounter=null;return 'A friendly wave, until next time.';
  case 'care':{const id=action.creatureId??'';if(!unlocked.includes(id))throw new Error('Meet this Sipling first.');if(state.treats<1)throw new Error('Finish a matching game to earn more treats.');state.treats--;state.bonds[id]=(state.bonds[id]??0)+3;state.careCount++;return `${creatureById(id)!.name} loved that treat. You want to hold her close and be with her. Bond +3!`;}
