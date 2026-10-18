@@ -9,7 +9,7 @@ export const habitats=[
 export type Memory={cards:string[];revealed:number[];matched:number[];moves:number;complete:boolean};
 export type RiddleDifficulty='easy'|'medium'|'hard';
 export type RiddleState={week:string;question:string;solved:boolean;difficulty:RiddleDifficulty|null};
-export const DAILY_TREAT_LIMIT=8;
+export const DAILY_TREAT_LIMIT=30;
 const riddleCreature=creatures.find(c=>c.at===1000000&&c.rarity!=='Legendary')?.id??'aerocrystal';
 const legendaryCreatures=creatures.filter(c=>c.at===1000000&&c.rarity==='Legendary'&&c.stage<4).map(c=>c.id);
 const riddles=[{question:'I have a face but no eyes, hands but no arms, and I keep your café moving. What am I?',answer:'clock'},{question:'I grow brighter when shared, but I never get smaller. What am I?',answer:'kindness'},{question:'I can be cracked, made, told, and played. What am I?',answer:'joke'}];
